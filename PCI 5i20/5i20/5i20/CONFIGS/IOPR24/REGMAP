@@ -1,0 +1,17 @@
+IOPR24 
+
+72 bit parallel I/O organized as three 24 bit ports
+32 bit access (8 MSbs are dont/care for port access}
+
+BASE ADDRESS +0		24 bit I/O port = I/O bits 00..23
+BASE ADDRESS +4		24 bit I/O port = I/O bits 24..47
+BASE ADDRESS +8		24 bit I/O port = I/O bits 48..71
+BASE ADDRESS +12	32 read/write test port
+
+
+BASE ADDRESS +16	24 bit DDR register for port at 0
+BASE ADDRESS +20	24 bit DDR register for port at 4
+BASE ADDRESS +24	24 bit DDR register for port at 8
+
+1 bit in DDR means cooresponding I/O bit is an output
+

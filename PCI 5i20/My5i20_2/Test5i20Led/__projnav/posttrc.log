@@ -1,0 +1,4 @@
+Post Route Timing Report for Module leds . . .
+TRACE command line and options:
+trce -intstyle ise -e 3 -l 3 -xml leds leds.ncd -o leds.twr leds.pcf
+Post Route Timing Report for Module leds : DONE

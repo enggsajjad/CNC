@@ -1,0 +1,41 @@
+; This is a setup file for testmove.exe - test simple motion on HOSTMOT
+
+; tuning parameters for motor 0
+Motor 	0
+KP	500
+KD	30000
+KI	200000
+IL	25000
+KF	122
+PosErrorForStop   4000
+
+; tuning parameters for motor 1
+Motor 	1
+KP	500
+KD	30000
+KI	200000
+IL	25000
+KF	122
+PosErrorForStop   4000
+
+; tuning parameters for motor 2
+Motor 	2
+KP	200
+KD	12000
+KI	20000
+IL	10000
+KF	50
+PosErrorForStop   400
+
+; tuning parameters for motor 3
+Motor 	3
+KP	200
+KD	12000
+KI	20000
+IL	10000
+KF	50
+PosErrorForStop   400
+
+SlewVel           50000
+Acc               12
+

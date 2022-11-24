@@ -1,0 +1,9 @@
+NET "ledx<0>" LOC = "p10";
+NET "ledx<1>" LOC = "p14";
+NET "ledx<2>" LOC = "p15";
+NET "ledx<3>" LOC = "p16";
+NET "ledx<4>" LOC = "p17";
+NET "ledx<5>" LOC = "p18";
+NET "ledx<6>" LOC = "p20";
+NET "ledx<7>" LOC = "p21";
+NET "clk" LOC = "p185";

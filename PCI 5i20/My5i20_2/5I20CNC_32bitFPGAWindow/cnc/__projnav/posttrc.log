@@ -1,0 +1,4 @@
+Post Route Timing Report for Module CNC . . .
+TRACE command line and options:
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+Post Route Timing Report for Module CNC : DONE

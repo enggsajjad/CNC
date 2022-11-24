@@ -1,0 +1,254 @@
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc cnc_io.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc cnc_io.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc cnc_io.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc cnc_io.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc cnc_io.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc cnc_io.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc cnc_io.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc cnc_io.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc cnc_io.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc cnc_io.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc cnc_io.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc cnc_io.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc cnc_io.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc test.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd
+xst -intstyle ise -ifn __projnav/IOPR24.xst -ofn IOPR24.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf
+par -w -intstyle ise -ol std -t 1 IOPR24_map.ncd IOPR24.ncd IOPR24.pcf
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+bitgen -intstyle ise -f IOPR24.ut IOPR24.ncd

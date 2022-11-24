@@ -1,0 +1,217 @@
+# XST (Creating Lso File) : 
+leds.lso
+# xst flow : RunXST
+leds.syr
+leds.prj
+leds.sprj
+leds.ana
+leds.stx
+leds.cmd_log
+# xst flow : RunXST
+leds.syr
+leds.prj
+leds.sprj
+leds.ana
+leds.stx
+leds.cmd_log
+# XST (Creating Lso File) : 
+leds.lso
+# xst flow : RunXST
+leds.syr
+leds.prj
+leds.sprj
+leds.ana
+leds.stx
+leds.cmd_log
+# xst flow : RunXST
+leds.syr
+leds.prj
+leds.sprj
+leds.ana
+leds.stx
+leds.cmd_log
+# XST (Creating Lso File) : 
+leds.lso
+# xst flow : RunXST
+leds.syr
+leds.prj
+leds.sprj
+leds.ana
+leds.stx
+leds.cmd_log
+leds.ngc
+leds.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\test5i20led/_ngo
+leds.ngd
+leds_ngdbuild.nav
+leds.bld
+pinout.ucf.untf
+leds.cmd_log
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\test5i20led/_ngo
+leds.ngd
+leds_ngdbuild.nav
+leds.bld
+pinout.ucf.untf
+leds.cmd_log
+# Implementation : Map
+leds_map.ncd
+leds.ngm
+leds.pcf
+leds.nc1
+leds.mrp
+leds_map.mrp
+leds.mdf
+__projnav/map.log
+leds.cmd_log
+MAP_NO_GUIDE_FILE_CPF "leds"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+leds.twr
+leds.twx
+leds.tsi
+leds.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+leds.ncd
+leds.par
+leds.pad
+leds_pad.txt
+leds_pad.csv
+leds.pad_txt
+leds.dly
+reportgen.log
+leds.xpi
+leds.grf
+leds.itr
+leds_last_par.ncd
+__projnav/par.log
+leds.placed_ncd_tracker
+leds.routed_ncd_tracker
+leds.cmd_log
+PAR_NO_GUIDE_FILE_CPF "leds"
+# Generate Programming File
+__projnav/leds_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+leds.ut
+# Generate Programming File
+leds.bgn
+leds.rbt
+leds.ll
+leds.msk
+leds.drc
+leds.nky
+leds.bit
+leds.bin
+leds.isc
+leds.cmd_log
+# Generate PROM, ACE, or JTAG File
+leds.ace
+xilinx.sys
+leds.mpm
+leds.mcs
+leds.prm
+leds.dst
+leds.exo
+leds.tek
+leds.hex
+leds.svf
+leds.stapl
+impact.cmd
+_impact.log
+_impact.cmd
+# XST (Creating Lso File) : 
+leds.lso
+# xst flow : RunXST
+leds.syr
+leds.prj
+leds.sprj
+leds.ana
+leds.stx
+leds.cmd_log
+leds.ngc
+leds.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\test5i20led/_ngo
+leds.ngd
+leds_ngdbuild.nav
+leds.bld
+pinout.ucf.untf
+leds.cmd_log
+# Implementation : Map
+leds_map.ncd
+leds.ngm
+leds.pcf
+leds.nc1
+leds.mrp
+leds_map.mrp
+leds.mdf
+__projnav/map.log
+leds.cmd_log
+MAP_NO_GUIDE_FILE_CPF "leds"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+leds.twr
+leds.twx
+leds.tsi
+leds.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+leds.ncd
+leds.par
+leds.pad
+leds_pad.txt
+leds_pad.csv
+leds.pad_txt
+leds.dly
+reportgen.log
+leds.xpi
+leds.grf
+leds.itr
+leds_last_par.ncd
+__projnav/par.log
+leds.placed_ncd_tracker
+leds.routed_ncd_tracker
+leds.cmd_log
+PAR_NO_GUIDE_FILE_CPF "leds"
+# Generate Programming File
+__projnav/leds_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+leds.ut
+# Generate Programming File
+leds.bgn
+leds.rbt
+leds.ll
+leds.msk
+leds.drc
+leds.nky
+leds.bit
+leds.bin
+leds.isc
+leds.cmd_log
+# Generate PROM, ACE, or JTAG File
+leds.ace
+xilinx.sys
+leds.mpm
+leds.mcs
+leds.prm
+leds.dst
+leds.exo
+leds.tek
+leds.hex
+leds.svf
+leds.stapl
+impact.cmd
+_impact.log
+_impact.cmd

@@ -1,0 +1,16 @@
+NET "LWR" LOC = "p160";
+NET "ADS" LOC = "p98";
+NET "LClk" LOC = "p182";
+NET "LAD<0>" LOC = "p153";
+NET "LAD<1>" LOC = "p146";
+NET "LAD<2>" LOC = "p142";
+NET "LAD<3>" LOC = "p135";
+
+NET "LEDS<0>" LOC = "p10";
+NET "LEDS<1>" LOC = "p14";
+NET "LEDS<2>" LOC = "p15";
+NET "LEDS<3>" LOC = "p16";
+NET "LEDS<4>" LOC = "p17";
+NET "LEDS<5>" LOC = "p18";
+NET "LEDS<6>" LOC = "p20";
+NET "LEDS<7>" LOC = "p21";

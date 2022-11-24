@@ -1,0 +1,2 @@
+add instance ldce 1248 1536 R0 -sn=1
+select figure at 1455 1296 20 -branches -sn=1

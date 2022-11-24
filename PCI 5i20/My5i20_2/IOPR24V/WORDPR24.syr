@@ -1,0 +1,167 @@
+Release 6.1i - xst G.23
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.17 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.17 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: WORDPR24.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : WORDPR24.prj
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+Verilog Include Directory          : 
+
+---- Target Parameters
+Output File Name                   : WORDPR24
+Output Format                      : NGC
+Target Device                      : xc2s200-6-pq208
+
+---- Source Options
+Top Module Name                    : WORDPR24
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : lut
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100
+Add Generic Clock Buffer(BUFG)     : 4
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : ONLY
+Write Timing Constraints           : NO
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : WORDPR24.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+Optimize Instantiated Primitives   : NO
+
+=========================================================================
+
+WARNING:Xst:1885 - LSO file is empty, default list of libraries is used
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling source file "WORDPR24.v"
+Module <WORDPR24> compiled
+No errors in compilation
+Analysis of file <WORDPR24.prj> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <WORDPR24>.
+Module <WORDPR24> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <WORDPR24>.
+    Related source file is WORDPR24.v.
+    Found 24-bit tristate buffer for signal <obus>.
+    Found 24-bit register for signal <ddrreg>.
+    Found 24-bit register for signal <outreg>.
+    Found 24-bit tristate buffer for signal <tsoutreg>.
+    Summary:
+	inferred  48 D-type flip-flop(s).
+	inferred  48 Tristate(s).
+Unit <WORDPR24> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 2
+  24-bit register                  : 2
+# Tristates                        : 25
+  1-bit tristate buffer            : 24
+  24-bit tristate buffer           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : WORDPR24.ngr
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 77
+
+Cell Usage :
+# FlipFlops/Latches                : 48
+#      FDE                         : 24
+#      FDRE                        : 24
+# Tri-States                       : 48
+#      BUFT                        : 48
+=========================================================================
+CPU : 0.58 / 0.94 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+
+Total memory usage is 50576 kilobytes
+
+

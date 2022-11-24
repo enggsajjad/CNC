@@ -1,0 +1,23 @@
+Release 6.1i - ngdbuild G.23
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc\cnc/_ngo -uc
+CNCpins.ucf -p xc2s200-pq208-6 IOPR24.ngc IOPR24.ngd 
+
+Reading NGO file "F:/My5i20/5I20CNC/cnc/IOPR24.ngc" ...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "CNCpins.ucf" ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 40552 kilobytes
+
+Writing NGD file "IOPR24.ngd" ...
+
+Writing NGDBUILD log file "IOPR24.bld"...

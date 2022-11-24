@@ -1,0 +1,317 @@
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling source file "test.v"
+Module <test> compiled
+No errors in compilation
+Analysis of file <test.prj> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <test>.
+Module <test> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <test>.
+    Related source file is test.v.
+WARNING:Xst:1779 - Inout <LAD> is used but is never assigned.
+    Found 4-bit register for signal <A>.
+    Found 4-bit register for signal <D>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <test> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 2
+  4-bit register                   : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <test> ...
+Loading device for application Xst from file 'v200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block test, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2s200pq208-6 
+
+ Number of Slices:                       5  out of   2352     0%  
+ Number of Slice Flip Flops:             8  out of   4704     0%  
+ Number of 4 input LUTs:                 2  out of   4704     0%  
+ Number of bonded IOBs:                 14  out of    144     9%  
+ Number of GCLKs:                        1  out of      4    25%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+LClk                               | BUFGP                  | 8     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -6
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 4.686ns
+   Maximum output required time after clock: 6.788ns
+   Maximum combinational path delay: No path found
+
+=========================================================================
+Completed process "Synthesize".
+
+
+
+Started process "Translate".
+
+
+Command Line: ngdbuild -intstyle ise -dd f:\my5i20\test4bit/_ngo -uc CNCpins.ucf
+-p xc2s200-pq208-6 test.ngc test.ngd 
+
+Reading NGO file "f:/my5i20/test4bit/test.ngc" ...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "CNCpins.ucf" ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 39528 kilobytes
+
+Writing NGD file "test.ngd" ...
+
+Writing NGDBUILD log file "test.bld"...
+
+NGDBUILD done.
+Completed process "Translate".
+
+
+
+Started process "Map".
+
+Using target part "2s200pq208-6".
+Removing unused or disabled logic...
+Running cover...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+Logic Distribution:
+    Number of Slices containing only related logic:      0 out of      0    0%
+    Number of Slices containing unrelated logic:         0 out of      0    0%
+        *See NOTES below for an explanation of the effects of unrelated logic
+   Number of bonded IOBs:            14 out of    140   10%
+      IOB Flip Flops:                               8
+   Number of GCLKs:                   1 out of      4   25%
+   Number of GCLKIOBs:                1 out of      4   25%
+
+Total equivalent gate count for design:  64
+Additional JTAG gate count for IOBs:  720
+Peak Memory Usage:  63 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity -
+   e.g. two LUTs are "related" if they share common inputs.
+   When assembling slices, Map gives priority to combine logic that
+   is related.  Doing so results in the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin
+   packing unrelated logic into a slice once 99% of the slices are
+   occupied through related logic packing.
+
+   Note that once logic distribution reaches the 99% level through
+   related logic packing, this does not mean the device is completely
+   utilized.  Unrelated logic packing will then begin, continuing until
+   all usable LUTs and FFs are occupied.  Depending on your timing
+   budget, increased levels of unrelated logic packing may adversely
+   affect the overall timing performance of your design.
+
+
+Mapping completed.
+See MAP report file "test_map.mrp" for details.
+Completed process "Map".
+
+Mapping Module test . . .
+MAP command line:
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o test_map.ncd test.ngd test.pcf
+Mapping Module test: DONE
+
+
+
+Started process "Place & Route".
+
+
+
+
+
+Constraints file: test.pcf
+
+Loading device database for application Par from file "test_map.ncd".
+   "test" is an NCD, version 2.38, device xc2s200, package pq208, speed -6
+Loading device for application Par from file 'v200.nph' in environment
+C:/Xilinx.
+Device speed data version:  PRODUCTION 1.27 2003-06-19.
+
+
+Resolving physical constraints.
+Finished resolving physical constraints.
+
+Device utilization summary:
+
+   Number of External GCLKIOBs         1 out of 4      25%
+   Number of External IOBs            14 out of 140    10%
+      Number of LOCed External IOBs   14 out of 14    100%
+
+
+   Number of GCLKs                     1 out of 4      25%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+
+Phase 1.1
+Phase 1.1 (Checksum:9896af) REAL time: 0 secs 
+
+Phase 2.23
+Phase 2.23 (Checksum:1312cfe) REAL time: 0 secs 
+
+Phase 3.3
+Phase 3.3 (Checksum:1c9c37d) REAL time: 0 secs 
+
+Phase 4.5
+Phase 4.5 (Checksum:26259fc) REAL time: 0 secs 
+
+Phase 5.8
+Phase 5.8 (Checksum:9946dd) REAL time: 0 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 0 secs 
+
+Phase 7.18
+Phase 7.18 (Checksum:42c1d79) REAL time: 0 secs 
+
+Writing design to file test.ncd.
+
+Total REAL time to Placer completion: 0 secs 
+Total CPU time to Placer completion: 0 secs 
+
+
+Phase 1: 25 unrouted;       REAL time: 0 secs 
+
+Phase 2: 17 unrouted;       REAL time: 0 secs 
+
+Phase 3: 0 unrouted;       REAL time: 0 secs 
+
+Phase 4: 0 unrouted;       REAL time: 0 secs 
+
+Total REAL time to Router completion: 0 secs 
+Total CPU time to Router completion: 0 secs 
+
+Generating "par" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++----------------------------+----------+--------+------------+-------------+
+|         Clock Net          | Resource | Fanout |Net Skew(ns)|Max Delay(ns)|
++----------------------------+----------+--------+------------+-------------+
+|        LClk_BUFGP          |  Global  |    8   |  0.008     |  0.440      |
++----------------------------+----------+--------+------------+-------------+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 0 secs 
+Total CPU time to PAR completion: 0 secs 
+
+Peak Memory Usage:  53 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Writing design to file test.ncd.
+
+
+PAR done.
+Completed process "Place & Route".
+
+
+Started process "Generate Post-Place & Route Static Timing".
+
+
+Analysis completed Tue Mar 13 11:22:42 2012
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Completed process "Generate Post-Place & Route Static Timing".
+
+Place & Route Module test . . .
+PAR command line: par -w -intstyle ise -ol std -t 1 test_map.ncd test.ncd test.pcf
+PAR completed successfully
+
+
+
+
+Started process "Generate Programming File".
+
+Completed process "Generate Programming File".
+
+

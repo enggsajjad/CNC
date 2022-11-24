@@ -1,0 +1,370 @@
+Release 6.1i - xst G.23
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.17 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.17 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: IOPR24.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : IOPR24.prj
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+Verilog Include Directory          : 
+
+---- Target Parameters
+Output File Name                   : IOPR24
+Output Format                      : NGC
+Target Device                      : xc2s200-6-pq208
+
+---- Source Options
+Top Module Name                    : IOPR24
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : lut
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100
+Add Generic Clock Buffer(BUFG)     : 4
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : IOPR24.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+Optimize Instantiated Primitives   : NO
+
+=========================================================================
+
+WARNING:Xst:1885 - LSO file is empty, default list of libraries is used
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling source file "IOPR24.v"
+Module <IOPR24> compiled
+No errors in compilation
+Analysis of file <IOPR24.prj> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <IOPR24>.
+Module <IOPR24> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <IOPR24>.
+    Related source file is IOPR24.v.
+WARNING:Xst:1780 - Signal <st_load_clk> is never used or assigned.
+WARNING:Xst:646 - Signal <A<7:4>> is assigned but never used.
+WARNING:Xst:646 - Signal <cmds<15:14>> is assigned but never used.
+WARNING:Xst:646 - Signal <SP_BRK> is assigned but never used.
+WARNING:Xst:646 - Signal <ST_DIR> is assigned but never used.
+WARNING:Xst:646 - Signal <SP_DIR> is assigned but never used.
+WARNING:Xst:646 - Signal <SP_DIS> is assigned but never used.
+WARNING:Xst:1780 - Signal <Areg> is never used or assigned.
+    Found 16x16-bit ROM for signal <cmds>.
+    Found 1-bit register for signal <ST_CLK>.
+    Found 26-bit adder for signal <$n0000> created at line 142.
+    Found 32-bit comparator equal for signal <$n0005> created at line 152.
+    Found 8-bit register for signal <A>.
+    Found 32-bit up counter for signal <cnt>.
+    Found 32-bit register for signal <cnt_val>.
+    Found 8-bit register for signal <D>.
+    Found 1-bit register for signal <ld_val>.
+    Found 1-bit register for signal <ST_DIS>.
+    Found 1-bit register for signal <ST_ENB>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred  52 D-type flip-flop(s).
+	inferred   1 Adder/Subtracter(s).
+	inferred   1 Comparator(s).
+Unit <IOPR24> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                             : 1
+  16x16-bit ROM                    : 1
+# Registers                        : 7
+  8-bit register                   : 2
+  1-bit register                   : 4
+  32-bit register                  : 1
+# Counters                         : 1
+  32-bit up counter                : 1
+# Adders/Subtractors               : 1
+  26-bit adder                     : 1
+# Comparators                      : 1
+  32-bit comparator equal          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1291 - FF/Latch <A_7> is unconnected in block <IOPR24>.
+WARNING:Xst:1291 - FF/Latch <A_4> is unconnected in block <IOPR24>.
+WARNING:Xst:1291 - FF/Latch <A_5> is unconnected in block <IOPR24>.
+WARNING:Xst:1291 - FF/Latch <A_6> is unconnected in block <IOPR24>.
+WARNING:Xst:1426 - The value init of the FF/Latch cnt_val_6 hinder the constant cleaning in the block IOPR24.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch cnt_val_18 hinder the constant cleaning in the block IOPR24.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch cnt_val_19 hinder the constant cleaning in the block IOPR24.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch cnt_val_20 hinder the constant cleaning in the block IOPR24.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch cnt_val_21 hinder the constant cleaning in the block IOPR24.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch cnt_val_22 hinder the constant cleaning in the block IOPR24.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch cnt_val_24 hinder the constant cleaning in the block IOPR24.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_26> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_17> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_25> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_30> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_31> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_23> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_29> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_28> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_27> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_0> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_1> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_2> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_3> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_4> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_5> (without init value) is constant in block <IOPR24>.
+WARNING:Xst:1710 - FF/Latch  <cnt_val_7> (without init value) is constant in block <IOPR24>.
+
+Optimizing unit <IOPR24> ...
+Loading device for application Xst from file 'v200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Register cnt_val_24 equivalent to cnt_val_20 has been removed
+Register cnt_val_22 equivalent to cnt_val_20 has been removed
+Register cnt_val_21 equivalent to cnt_val_20 has been removed
+Register cnt_val_19 equivalent to cnt_val_18 has been removed
+Register cnt_val_20 equivalent to cnt_val_18 has been removed
+Register cnt_val_18 equivalent to cnt_val_6 has been removed
+Found area constraint ratio of 100 (+ 5) on block IOPR24, actual ratio is 2.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : IOPR24.ngr
+Top Level Output File Name         : IOPR24
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 20
+
+Macro Statistics :
+# ROMs                             : 1
+#      16x16-bit ROM               : 1
+# Registers                        : 8
+#      1-bit register              : 4
+#      32-bit register             : 2
+#      8-bit register              : 2
+# Adders/Subtractors               : 2
+#      26-bit adder                : 1
+#      32-bit adder                : 1
+# Comparators                      : 1
+#      32-bit comparator equal     : 1
+
+Cell Usage :
+# BELS                             : 179
+#      GND                         : 1
+#      LUT1                        : 47
+#      LUT2                        : 2
+#      LUT2_L                      : 3
+#      LUT3_L                      : 6
+#      LUT4                        : 14
+#      LUT4_L                      : 11
+#      MUXCY                       : 55
+#      VCC                         : 1
+#      XORCY                       : 39
+# FlipFlops/Latches                : 58
+#      FDE                         : 22
+#      FDR                         : 32
+#      FDRE                        : 3
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 10
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2s200pq208-6 
+
+ Number of Slices:                      67  out of   2352     2%  
+ Number of Slice Flip Flops:            58  out of   4704     1%  
+ Number of 4 input LUTs:                83  out of   4704     1%  
+ Number of bonded IOBs:                 19  out of    144    13%  
+ Number of GCLKs:                        1  out of      4    25%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+LClk                               | BUFGP                  | 58    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -6
+
+   Minimum period: 8.055ns (Maximum Frequency: 124.146MHz)
+   Minimum input arrival time before clock: 5.091ns
+   Maximum output required time after clock: 8.543ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'LClk'
+Delay:               8.055ns (Levels of Logic = 3)
+  Source:            cnt_12 (FF)
+  Destination:       ST_CLK (FF)
+  Source Clock:      LClk rising
+  Destination Clock: LClk rising
+
+  Data Path: cnt_12 to ST_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   1.085   1.332  cnt_12 (cnt_12)
+     LUT4:I0->O            1   0.549   1.035  _n000662 (CHOICE28)
+     LUT2:I1->O            1   0.549   1.035  _n000663 (CHOICE29)
+     LUT4:I2->O            1   0.549   1.035  _n0006182 (_n0006)
+     FDRE:CE                   0.886          ST_CLK
+    ----------------------------------------
+    Total                      8.055ns (3.618ns logic, 4.437ns route)
+                                       (44.9% logic, 55.1% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'LClk'
+Offset:              5.091ns (Levels of Logic = 2)
+  Source:            LWR (PAD)
+  Destination:       D_7 (FF)
+  Destination Clock: LClk rising
+
+  Data Path: LWR to D_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.776   1.035  LWR_IBUF (LWR_IBUF)
+     LUT1:I0->O            8   0.549   1.845  D_ClkEn_INV1 (D_N98)
+     FDE:CE                    0.886          D_0
+    ----------------------------------------
+    Total                      5.091ns (2.211ns logic, 2.880ns route)
+                                       (43.4% logic, 56.6% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LClk'
+Offset:              8.543ns (Levels of Logic = 2)
+  Source:            D_7 (FF)
+  Destination:       LEDS<7> (PAD)
+  Source Clock:      LClk rising
+
+  Data Path: D_7 to LEDS<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   1.085   1.206  D_7 (D_7)
+     LUT1:I0->O            1   0.549   1.035  LEDS<7>1 (LEDS_7_OBUF)
+     OBUF:I->O                 4.668          LEDS_7_OBUF (LEDS<7>)
+    ----------------------------------------
+    Total                      8.543ns (6.302ns logic, 2.241ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+CPU : 1.58 / 1.94 s | Elapsed : 1.00 / 2.00 s
+ 
+--> 
+
+Total memory usage is 59324 kilobytes
+
+

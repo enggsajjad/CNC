@@ -1,0 +1,11 @@
+# begin LFP file f:\test5i20led\pinout.lfp
+designfile leds.ngd
+IO_GROUP "led" IO_GROUP="leds" ;
+NET "led<7>" IO_GROUP="led"  ;
+NET "led<6>" IO_GROUP="led"  ;
+NET "led<5>" IO_GROUP="led"  ;
+NET "led<4>" IO_GROUP="led"  ;
+NET "led<3>" IO_GROUP="led"  ;
+NET "led<2>" IO_GROUP="led"  ;
+NET "led<1>" IO_GROUP="led"  ;
+NET "led<0>" IO_GROUP="led"  ;

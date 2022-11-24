@@ -1,0 +1,271 @@
+Release 6.1i Map G.23
+Xilinx Mapping Report File for Design 'IOPR24'
+
+Design Information
+------------------
+Command Line   : C:/Xilinx/bin/nt/map.exe -intstyle ise -p xc2s200-pq208-6 -cm
+area -pr b -k 4 -c 100 -tx off -o IOPR24_map.ncd IOPR24.ngd IOPR24.pcf 
+Target Device  : x2s200
+Target Package : pq208
+Target Speed   : -6
+Mapper Version : spartan2 -- $Revision: 1.16 $
+Mapped Date    : Fri May 10 17:27:05 2013
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   10
+Logic Utilization:
+  Number of Slice Flip Flops:        87 out of  4,704    1%
+  Number of 4 input LUTs:            22 out of  4,704    1%
+Logic Distribution:
+    Number of occupied Slices:                          57 out of  2,352    2%
+    Number of Slices containing only related logic:     57 out of     57  100%
+    Number of Slices containing unrelated logic:         0 out of     57    0%
+        *See NOTES below for an explanation of the effects of unrelated logic
+Total Number 4 input LUTs:           46 out of  4,704    1%
+      Number used as logic:                        22
+      Number used as a route-thru:                 24
+   Number of bonded IOBs:           116 out of    140   82%
+      IOB Flip Flops:                              86
+   Number of Tbufs:                 144 out of  2,464    5%
+   Number of GCLKs:                   2 out of      4   50%
+   Number of GCLKIOBs:                2 out of      4   50%
+
+Total equivalent gate count for design:  2,404
+Additional JTAG gate count for IOBs:  5,664
+Peak Memory Usage:  65 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity -
+   e.g. two LUTs are "related" if they share common inputs.
+   When assembling slices, Map gives priority to combine logic that
+   is related.  Doing so results in the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin
+   packing unrelated logic into a slice once 99% of the slices are
+   occupied through related logic packing.
+
+   Note that once logic distribution reaches the 99% level through
+   related logic packing, this does not mean the device is completely
+   utilized.  Unrelated logic packing will then begin, continuing until
+   all usable LUTs and FFs are occupied.  Depending on your timing
+   budget, increased levels of unrelated logic packing may adversely
+   affect the overall timing performance of your design.
+
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:1403 - The register oportx1_outreg_0 has the property IOB=TRUE, but
+   was not packed into the input side of an I/O component. The mapper could not
+   find a placement for register symbol oportx1_outreg_0.
+WARNING:Pack:1403 - The register oportx1_outreg_1 has the property IOB=TRUE, but
+   was not packed into the input side of an I/O component. The mapper could not
+   find a placement for register symbol oportx1_outreg_1.
+WARNING:Pack:1403 - The register oportx1_outreg_2 has the property IOB=TRUE, but
+   was not packed into the input side of an I/O component. The mapper could not
+   find a placement for register symbol oportx1_outreg_2.
+WARNING:Pack:1403 - The register oportx1_outreg_3 has the property IOB=TRUE, but
+   was not packed into the input side of an I/O component. The mapper could not
+   find a placement for register symbol oportx1_outreg_3.
+WARNING:Pack:1403 - The register oportx1_outreg_4 has the property IOB=TRUE, but
+   was not packed into the input side of an I/O component. The mapper could not
+   find a placement for register symbol oportx1_outreg_4.
+WARNING:Pack:1403 - The register oportx1_outreg_5 has the property IOB=TRUE, but
+   was not packed into the input side of an I/O component. The mapper could not
+   find a placement for register symbol oportx1_outreg_5.
+WARNING:Pack:1403 - The register oportx1_outreg_6 has the property IOB=TRUE, but
+   was not packed into the input side of an I/O component. The mapper could not
+   find a placement for register symbol oportx1_outreg_6.
+WARNING:Pack:1403 - The register oportx1_outreg_7 has the property IOB=TRUE, but
+   was not packed into the input side of an I/O component. The mapper could not
+   find a placement for register symbol oportx1_outreg_7.
+WARNING:Pack:1403 - The register oportx1_outreg_8 has the property IOB=TRUE, but
+   was not packed into the input side of an I/O component. The mapper could not
+   find a placement for register symbol oportx1_outreg_8.
+WARNING:Pack:1403 - The register oportx1_outreg_9 has the property IOB=TRUE, but
+   was not packed into the input side of an I/O component. The mapper could not
+   find a placement for register symbol oportx1_outreg_9.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type    | Direction | IO Standard | Drive    | Slew | Reg (s)  | Resistor | IOB   |
+|                                    |         |           |             | Strength | Rate |          |          | Delay |
++------------------------------------------------------------------------------------------------------------------------+
+| LClk                               | GCLKIOB | INPUT     | LVTTL       |          |      |          |          |       |
+| SYNCLK                             | GCLKIOB | INPUT     | LVTTL       |          |      |          |          |       |
+| ADS                                | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| IOBits<0>                          | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<1>                          | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<2>                          | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<3>                          | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<4>                          | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<5>                          | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<6>                          | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<7>                          | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<8>                          | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<9>                          | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<10>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<11>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<12>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<13>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<14>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<15>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<16>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<17>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<18>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<19>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<20>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<21>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<22>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<23>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<24>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<25>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<26>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<27>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<28>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<29>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<30>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<31>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<32>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<33>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<34>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<35>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<36>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<37>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<38>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<39>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<40>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<41>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<42>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<43>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<44>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<45>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<46>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<47>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<48>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| IOBits<49>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| IOBits<50>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| IOBits<51>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| IOBits<52>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| IOBits<53>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| IOBits<54>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| IOBits<55>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| IOBits<56>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| IOBits<57>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| IOBits<58>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<59>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<60>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<61>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<62>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<63>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<64>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<65>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<66>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<67>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<68>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<69>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<70>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| IOBits<71>                         | IOB     | BIDIR     | LVTTL       | 12       | SLOW | OUTFF    |          |       |
+| LAD<0>                             | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<1>                             | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<2>                             | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<3>                             | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<4>                             | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<5>                             | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<6>                             | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<7>                             | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<8>                             | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<9>                             | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<10>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<11>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<12>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<13>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<14>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<15>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<16>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<17>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<18>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<19>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<20>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<21>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<22>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<23>                            | IOB     | BIDIR     | LVTTL       | 8        | FAST | INFF     |          | IFD   |
+| LAD<24>                            | IOB     | OUTPUT    | LVTTL       | 8        | FAST |          |          |       |
+| LAD<25>                            | IOB     | OUTPUT    | LVTTL       | 8        | FAST |          |          |       |
+| LAD<26>                            | IOB     | OUTPUT    | LVTTL       | 8        | FAST |          |          |       |
+| LAD<27>                            | IOB     | OUTPUT    | LVTTL       | 8        | FAST |          |          |       |
+| LAD<28>                            | IOB     | OUTPUT    | LVTTL       | 8        | FAST |          |          |       |
+| LAD<29>                            | IOB     | OUTPUT    | LVTTL       | 8        | FAST |          |          |       |
+| LAD<30>                            | IOB     | OUTPUT    | LVTTL       | 8        | FAST |          |          |       |
+| LAD<31>                            | IOB     | OUTPUT    | LVTTL       | 8        | FAST |          |          |       |
+| LEDS<0>                            | IOB     | OUTPUT    | LVTTL       | 24       | SLOW |          |          |       |
+| LEDS<1>                            | IOB     | OUTPUT    | LVTTL       | 24       | SLOW |          |          |       |
+| LEDS<2>                            | IOB     | OUTPUT    | LVTTL       | 24       | SLOW |          |          |       |
+| LEDS<3>                            | IOB     | OUTPUT    | LVTTL       | 24       | SLOW |          |          |       |
+| LEDS<4>                            | IOB     | OUTPUT    | LVTTL       | 24       | SLOW |          |          |       |
+| LEDS<5>                            | IOB     | OUTPUT    | LVTTL       | 24       | SLOW |          |          |       |
+| LEDS<6>                            | IOB     | OUTPUT    | LVTTL       | 24       | SLOW |          |          |       |
+| LEDS<7>                            | IOB     | OUTPUT    | LVTTL       | 24       | SLOW |          |          |       |
+| LRD                                | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| LWR                                | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| LW_R                               | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
++------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group Summary
+------------------------------
+No area groups were found in this design.
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.

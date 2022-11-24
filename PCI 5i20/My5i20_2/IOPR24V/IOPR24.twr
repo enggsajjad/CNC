@@ -1,0 +1,313 @@
+--------------------------------------------------------------------------------
+Release 6.1i Trace G.23
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+C:/Xilinx/bin/nt/trce.exe -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o
+IOPR24.twr IOPR24.pcf
+
+
+Design file:              IOPR24.ncd
+Physical constraint file: IOPR24.pcf
+Device,speed:             xc2s200,-6 (PRODUCTION 1.27 2003-06-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+================================================================================
+Timing constraint: TS_LClk = PERIOD TIMEGRP "LClk"  15 nS   HIGH 50.000000 % ;
+
+ 432 items analyzed, 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is  11.109ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_SYNCLK = PERIOD TIMEGRP "SYNCLK"  20 nS   HIGH 50.000000 % ;
+
+ 325 items analyzed, 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   5.113ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_P2P = MAXDELAY FROM TIMEGRP "PADS" TO TIMEGRP "PADS" 25 nS  ; 
+
+ 248 items analyzed, 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is  19.426ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: OFFSET = OUT 20 nS  AFTER COMP "LClk" ;
+
+ 824 items analyzed, 0 timing errors detected.
+ Minimum allowable offset is  18.600ns.
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock LClk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  |  Clock |
+Destination | to PAD     |Internal Clock(s) |  Phase |
+------------+------------+------------------+--------+
+IOBits<0>   |   10.233(R)|LClk_BUFGP        |   0.000|
+IOBits<10>  |    9.769(R)|LClk_BUFGP        |   0.000|
+IOBits<11>  |   10.467(R)|LClk_BUFGP        |   0.000|
+IOBits<12>  |   10.138(R)|LClk_BUFGP        |   0.000|
+IOBits<13>  |   10.703(R)|LClk_BUFGP        |   0.000|
+IOBits<14>  |   10.382(R)|LClk_BUFGP        |   0.000|
+IOBits<15>  |   10.862(R)|LClk_BUFGP        |   0.000|
+IOBits<16>  |   10.236(R)|LClk_BUFGP        |   0.000|
+IOBits<17>  |   10.267(R)|LClk_BUFGP        |   0.000|
+IOBits<18>  |    9.353(R)|LClk_BUFGP        |   0.000|
+IOBits<19>  |    9.475(R)|LClk_BUFGP        |   0.000|
+IOBits<1>   |    9.933(R)|LClk_BUFGP        |   0.000|
+IOBits<20>  |   11.256(R)|LClk_BUFGP        |   0.000|
+IOBits<21>  |   10.864(R)|LClk_BUFGP        |   0.000|
+IOBits<22>  |   10.693(R)|LClk_BUFGP        |   0.000|
+IOBits<23>  |   10.106(R)|LClk_BUFGP        |   0.000|
+IOBits<24>  |    9.832(R)|LClk_BUFGP        |   0.000|
+IOBits<25>  |   10.091(R)|LClk_BUFGP        |   0.000|
+IOBits<26>  |    9.728(R)|LClk_BUFGP        |   0.000|
+IOBits<27>  |    9.321(R)|LClk_BUFGP        |   0.000|
+IOBits<28>  |    9.319(R)|LClk_BUFGP        |   0.000|
+IOBits<29>  |    9.851(R)|LClk_BUFGP        |   0.000|
+IOBits<2>   |    8.663(R)|LClk_BUFGP        |   0.000|
+IOBits<30>  |    9.453(R)|LClk_BUFGP        |   0.000|
+IOBits<31>  |    9.481(R)|LClk_BUFGP        |   0.000|
+IOBits<32>  |    9.831(R)|LClk_BUFGP        |   0.000|
+IOBits<33>  |   10.189(R)|LClk_BUFGP        |   0.000|
+IOBits<34>  |    9.934(R)|LClk_BUFGP        |   0.000|
+IOBits<35>  |   10.477(R)|LClk_BUFGP        |   0.000|
+IOBits<36>  |    9.677(R)|LClk_BUFGP        |   0.000|
+IOBits<37>  |    9.962(R)|LClk_BUFGP        |   0.000|
+IOBits<38>  |   10.434(R)|LClk_BUFGP        |   0.000|
+IOBits<39>  |   10.191(R)|LClk_BUFGP        |   0.000|
+IOBits<3>   |    9.413(R)|LClk_BUFGP        |   0.000|
+IOBits<40>  |    9.898(R)|LClk_BUFGP        |   0.000|
+IOBits<41>  |    9.625(R)|LClk_BUFGP        |   0.000|
+IOBits<42>  |   10.092(R)|LClk_BUFGP        |   0.000|
+IOBits<43>  |    9.939(R)|LClk_BUFGP        |   0.000|
+IOBits<44>  |   10.584(R)|LClk_BUFGP        |   0.000|
+IOBits<45>  |   10.724(R)|LClk_BUFGP        |   0.000|
+IOBits<46>  |    9.894(R)|LClk_BUFGP        |   0.000|
+IOBits<47>  |    9.842(R)|LClk_BUFGP        |   0.000|
+IOBits<48>  |   10.908(R)|LClk_BUFGP        |   0.000|
+IOBits<49>  |   10.539(R)|LClk_BUFGP        |   0.000|
+IOBits<4>   |    9.386(R)|LClk_BUFGP        |   0.000|
+IOBits<50>  |   11.011(R)|LClk_BUFGP        |   0.000|
+IOBits<51>  |   10.746(R)|LClk_BUFGP        |   0.000|
+IOBits<52>  |   11.121(R)|LClk_BUFGP        |   0.000|
+IOBits<53>  |   11.356(R)|LClk_BUFGP        |   0.000|
+IOBits<54>  |   11.465(R)|LClk_BUFGP        |   0.000|
+IOBits<55>  |   11.555(R)|LClk_BUFGP        |   0.000|
+IOBits<56>  |   10.951(R)|LClk_BUFGP        |   0.000|
+IOBits<57>  |   10.594(R)|LClk_BUFGP        |   0.000|
+IOBits<58>  |   10.193(R)|LClk_BUFGP        |   0.000|
+IOBits<59>  |    9.079(R)|LClk_BUFGP        |   0.000|
+IOBits<5>   |    9.623(R)|LClk_BUFGP        |   0.000|
+IOBits<60>  |    9.096(R)|LClk_BUFGP        |   0.000|
+IOBits<61>  |    9.063(R)|LClk_BUFGP        |   0.000|
+IOBits<62>  |    9.748(R)|LClk_BUFGP        |   0.000|
+IOBits<63>  |    9.135(R)|LClk_BUFGP        |   0.000|
+IOBits<64>  |    9.118(R)|LClk_BUFGP        |   0.000|
+IOBits<65>  |    9.377(R)|LClk_BUFGP        |   0.000|
+IOBits<66>  |    9.564(R)|LClk_BUFGP        |   0.000|
+IOBits<67>  |    9.770(R)|LClk_BUFGP        |   0.000|
+IOBits<68>  |    9.559(R)|LClk_BUFGP        |   0.000|
+IOBits<69>  |    9.690(R)|LClk_BUFGP        |   0.000|
+IOBits<6>   |    9.362(R)|LClk_BUFGP        |   0.000|
+IOBits<70>  |    9.773(R)|LClk_BUFGP        |   0.000|
+IOBits<71>  |    9.770(R)|LClk_BUFGP        |   0.000|
+IOBits<7>   |   10.323(R)|LClk_BUFGP        |   0.000|
+IOBits<8>   |   10.081(R)|LClk_BUFGP        |   0.000|
+IOBits<9>   |    9.891(R)|LClk_BUFGP        |   0.000|
+LAD<0>      |   17.984(R)|LClk_BUFGP        |   0.000|
+LAD<10>     |   16.398(R)|LClk_BUFGP        |   0.000|
+LAD<11>     |   16.683(R)|LClk_BUFGP        |   0.000|
+LAD<12>     |   17.668(R)|LClk_BUFGP        |   0.000|
+LAD<13>     |   16.819(R)|LClk_BUFGP        |   0.000|
+LAD<14>     |   17.656(R)|LClk_BUFGP        |   0.000|
+LAD<15>     |   18.600(R)|LClk_BUFGP        |   0.000|
+LAD<16>     |   18.584(R)|LClk_BUFGP        |   0.000|
+LAD<17>     |   17.474(R)|LClk_BUFGP        |   0.000|
+LAD<18>     |   16.863(R)|LClk_BUFGP        |   0.000|
+LAD<19>     |   17.026(R)|LClk_BUFGP        |   0.000|
+LAD<1>      |   16.989(R)|LClk_BUFGP        |   0.000|
+LAD<20>     |   16.509(R)|LClk_BUFGP        |   0.000|
+LAD<21>     |   16.884(R)|LClk_BUFGP        |   0.000|
+LAD<22>     |   17.848(R)|LClk_BUFGP        |   0.000|
+LAD<23>     |   15.335(R)|LClk_BUFGP        |   0.000|
+LAD<24>     |   12.254(R)|LClk_BUFGP        |   0.000|
+LAD<25>     |   12.627(R)|LClk_BUFGP        |   0.000|
+LAD<26>     |   12.493(R)|LClk_BUFGP        |   0.000|
+LAD<27>     |   11.478(R)|LClk_BUFGP        |   0.000|
+LAD<28>     |   11.478(R)|LClk_BUFGP        |   0.000|
+LAD<29>     |   12.374(R)|LClk_BUFGP        |   0.000|
+LAD<2>      |   16.944(R)|LClk_BUFGP        |   0.000|
+LAD<30>     |   11.356(R)|LClk_BUFGP        |   0.000|
+LAD<31>     |   11.356(R)|LClk_BUFGP        |   0.000|
+LAD<3>      |   16.481(R)|LClk_BUFGP        |   0.000|
+LAD<4>      |   16.603(R)|LClk_BUFGP        |   0.000|
+LAD<5>      |   16.940(R)|LClk_BUFGP        |   0.000|
+LAD<6>      |   15.943(R)|LClk_BUFGP        |   0.000|
+LAD<7>      |   16.573(R)|LClk_BUFGP        |   0.000|
+LAD<8>      |   16.091(R)|LClk_BUFGP        |   0.000|
+LAD<9>      |   16.555(R)|LClk_BUFGP        |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock LClk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+LClk           |   11.109|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SYNCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SYNCLK         |    5.113|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+IOBits<0>      |LAD<0>         |   12.069|
+IOBits<10>     |LAD<10>        |   12.316|
+IOBits<11>     |LAD<11>        |   12.637|
+IOBits<12>     |LAD<12>        |   13.065|
+IOBits<13>     |LAD<13>        |   12.626|
+IOBits<14>     |LAD<14>        |   12.453|
+IOBits<15>     |LAD<15>        |   12.448|
+IOBits<16>     |LAD<16>        |   12.953|
+IOBits<17>     |LAD<17>        |   10.995|
+IOBits<18>     |LAD<18>        |   12.367|
+IOBits<19>     |LAD<19>        |   11.332|
+IOBits<1>      |LAD<1>         |   11.876|
+IOBits<20>     |LAD<20>        |   10.783|
+IOBits<21>     |LAD<21>        |   11.264|
+IOBits<22>     |LAD<22>        |   11.385|
+IOBits<23>     |LAD<23>        |    8.943|
+IOBits<24>     |LAD<0>         |   12.212|
+IOBits<25>     |LAD<1>         |   11.541|
+IOBits<26>     |LAD<2>         |   11.707|
+IOBits<27>     |LAD<3>         |   11.414|
+IOBits<28>     |LAD<4>         |    9.963|
+IOBits<29>     |LAD<5>         |   10.628|
+IOBits<2>      |LAD<2>         |   11.236|
+IOBits<30>     |LAD<6>         |   10.534|
+IOBits<31>     |LAD<7>         |   11.168|
+IOBits<32>     |LAD<8>         |   12.486|
+IOBits<33>     |LAD<9>         |   12.895|
+IOBits<34>     |LAD<10>        |   13.212|
+IOBits<35>     |LAD<11>        |   12.859|
+IOBits<36>     |LAD<12>        |   12.894|
+IOBits<37>     |LAD<13>        |   12.093|
+IOBits<38>     |LAD<14>        |   12.581|
+IOBits<39>     |LAD<15>        |   12.445|
+IOBits<3>      |LAD<3>         |   10.590|
+IOBits<40>     |LAD<16>        |   12.772|
+IOBits<41>     |LAD<17>        |   11.569|
+IOBits<42>     |LAD<18>        |   12.222|
+IOBits<43>     |LAD<19>        |   11.833|
+IOBits<44>     |LAD<20>        |   11.355|
+IOBits<45>     |LAD<21>        |   10.987|
+IOBits<46>     |LAD<22>        |   12.426|
+IOBits<47>     |LAD<23>        |    9.941|
+IOBits<48>     |LAD<0>         |   13.823|
+IOBits<49>     |LAD<1>         |   12.580|
+IOBits<4>      |LAD<4>         |   11.115|
+IOBits<50>     |LAD<2>         |   11.286|
+IOBits<51>     |LAD<3>         |   12.377|
+IOBits<52>     |LAD<4>         |   12.115|
+IOBits<53>     |LAD<5>         |   13.088|
+IOBits<54>     |LAD<6>         |   11.868|
+IOBits<55>     |LAD<7>         |   12.593|
+IOBits<56>     |LAD<8>         |   12.707|
+IOBits<57>     |LAD<9>         |   13.383|
+IOBits<58>     |LAD<10>        |   12.365|
+IOBits<59>     |LAD<11>        |   13.224|
+IOBits<5>      |LAD<5>         |    9.905|
+IOBits<60>     |LAD<12>        |   12.834|
+IOBits<61>     |LAD<13>        |   12.814|
+IOBits<62>     |LAD<14>        |   12.933|
+IOBits<63>     |LAD<15>        |   13.353|
+IOBits<64>     |LAD<16>        |   13.261|
+IOBits<65>     |LAD<17>        |   10.512|
+IOBits<66>     |LAD<18>        |   12.144|
+IOBits<67>     |LAD<19>        |   11.599|
+IOBits<68>     |LAD<20>        |   10.994|
+IOBits<69>     |LAD<21>        |   11.199|
+IOBits<6>      |LAD<6>         |   10.478|
+IOBits<70>     |LAD<22>        |   11.520|
+IOBits<71>     |LAD<23>        |    8.933|
+IOBits<7>      |LAD<7>         |   10.784|
+IOBits<8>      |LAD<8>         |   12.836|
+IOBits<9>      |LAD<9>         |   11.937|
+LRD            |LAD<0>         |   18.810|
+LRD            |LAD<10>        |   17.224|
+LRD            |LAD<11>        |   17.509|
+LRD            |LAD<12>        |   18.494|
+LRD            |LAD<13>        |   17.645|
+LRD            |LAD<14>        |   18.482|
+LRD            |LAD<15>        |   19.426|
+LRD            |LAD<16>        |   19.410|
+LRD            |LAD<17>        |   18.300|
+LRD            |LAD<18>        |   17.689|
+LRD            |LAD<19>        |   17.852|
+LRD            |LAD<1>         |   17.815|
+LRD            |LAD<20>        |   17.335|
+LRD            |LAD<21>        |   17.710|
+LRD            |LAD<22>        |   18.674|
+LRD            |LAD<23>        |   16.161|
+LRD            |LAD<24>        |   12.514|
+LRD            |LAD<25>        |   12.887|
+LRD            |LAD<26>        |   12.753|
+LRD            |LAD<27>        |   11.738|
+LRD            |LAD<28>        |   11.738|
+LRD            |LAD<29>        |   12.634|
+LRD            |LAD<2>         |   17.770|
+LRD            |LAD<30>        |   11.616|
+LRD            |LAD<31>        |   11.616|
+LRD            |LAD<3>         |   17.307|
+LRD            |LAD<4>         |   17.429|
+LRD            |LAD<5>         |   17.766|
+LRD            |LAD<6>         |   16.769|
+LRD            |LAD<7>         |   17.399|
+LRD            |LAD<8>         |   16.917|
+LRD            |LAD<9>         |   17.381|
+---------------+---------------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover 1829 paths, 0 nets, and 1035 connections
+
+Design statistics:
+   Minimum period:  11.109ns (Maximum frequency:  90.017MHz)
+   Maximum path delay from/to any node:  19.426ns
+   Minimum output required time after clock:  18.600ns
+
+
+Analysis completed Fri May 10 17:27:12 2013
+--------------------------------------------------------------------------------
+
+Peak Memory Usage: 51 MB

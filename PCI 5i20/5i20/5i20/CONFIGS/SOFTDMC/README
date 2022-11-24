@@ -1,0 +1,16 @@
+S4120_0.bit     4 axis SoftDMC brush motor controller config for quad drivers
+
+S= SoftDMC Rev 4.X = FIFOed interface
+4= 4 axis
+1= brush motor  (2 = 2 phase stepper 3 = 3 phase BLDC/AC)
+20 = 5I20
+_0 = standard config
+
+S8120_0.bit     8 axis SoftDMC brush motor controller config for 2x quad drivers
+
+S= SoftDMC Rev 4.X = FIFOed interface
+8= 8 axis
+1= brush motor  (2 = 2 phase stepper 3 = 3 phase BLDC/AC)
+20 = 5I20
+_0 = standard config
+

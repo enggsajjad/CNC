@@ -1,0 +1,638 @@
+# XST (Creating Lso File) : 
+IOPR24.lso
+# xst flow : RunXST
+IOPR24.syr
+IOPR24.prj
+IOPR24.sprj
+IOPR24.ana
+IOPR24.stx
+IOPR24.cmd_log
+IOPR24.ngc
+IOPR24.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\iopr24v/_ngo
+IOPR24.ngd
+IOPR24_ngdbuild.nav
+IOPR24.bld
+IOPR24_PINS.ucf.untf
+IOPR24.cmd_log
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\iopr24v/_ngo
+IOPR24.ngd
+IOPR24_ngdbuild.nav
+IOPR24.bld
+IOPR24_PINS.ucf.untf
+IOPR24.cmd_log
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\iopr24v/_ngo
+IOPR24.ngd
+IOPR24_ngdbuild.nav
+IOPR24.bld
+IOPR24_PINS.ucf.untf
+IOPR24.cmd_log
+# XST (Creating Lso File) : 
+IOPR24.lso
+# xst flow : RunXST
+IOPR24.syr
+IOPR24.prj
+IOPR24.sprj
+IOPR24.ana
+IOPR24.stx
+IOPR24.cmd_log
+IOPR24.ngc
+IOPR24.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\iopr24v/_ngo
+IOPR24.ngd
+IOPR24_ngdbuild.nav
+IOPR24.bld
+IOPR24_PINS.ucf.untf
+IOPR24.cmd_log
+# XST (Creating Lso File) : 
+IOPR24.lso
+# xst flow : RunXST
+IOPR24.syr
+IOPR24.prj
+IOPR24.sprj
+IOPR24.ana
+IOPR24.stx
+IOPR24.cmd_log
+IOPR24.ngc
+IOPR24.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\iopr24v/_ngo
+IOPR24.ngd
+IOPR24_ngdbuild.nav
+IOPR24.bld
+IOPR24_PINS.ucf.untf
+IOPR24.cmd_log
+# Implementation : Map
+IOPR24_map.ncd
+IOPR24.ngm
+IOPR24.pcf
+IOPR24.nc1
+IOPR24.mrp
+IOPR24_map.mrp
+IOPR24.mdf
+__projnav/map.log
+IOPR24.cmd_log
+MAP_NO_GUIDE_FILE_CPF "IOPR24"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+IOPR24.twr
+IOPR24.twx
+IOPR24.tsi
+IOPR24.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+IOPR24.ncd
+IOPR24.par
+IOPR24.pad
+IOPR24_pad.txt
+IOPR24_pad.csv
+IOPR24.pad_txt
+IOPR24.dly
+reportgen.log
+IOPR24.xpi
+IOPR24.grf
+IOPR24.itr
+IOPR24_last_par.ncd
+__projnav/par.log
+IOPR24.placed_ncd_tracker
+IOPR24.routed_ncd_tracker
+IOPR24.cmd_log
+PAR_NO_GUIDE_FILE_CPF "IOPR24"
+# Generate Programming File
+__projnav/IOPR24_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+IOPR24.ut
+# Generate Programming File
+IOPR24.bgn
+IOPR24.rbt
+IOPR24.ll
+IOPR24.msk
+IOPR24.drc
+IOPR24.nky
+IOPR24.bit
+IOPR24.bin
+IOPR24.isc
+IOPR24.cmd_log
+# XST (Creating Lso File) : 
+IOPR24.lso
+# xst flow : RunXST
+IOPR24.syr
+IOPR24.prj
+IOPR24.sprj
+IOPR24.ana
+IOPR24.stx
+IOPR24.cmd_log
+IOPR24.ngc
+IOPR24.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\iopr24v/_ngo
+IOPR24.ngd
+IOPR24_ngdbuild.nav
+IOPR24.bld
+.untf
+IOPR24.cmd_log
+# Implementation : Map
+IOPR24_map.ncd
+IOPR24.ngm
+IOPR24.pcf
+IOPR24.nc1
+IOPR24.mrp
+IOPR24_map.mrp
+IOPR24.mdf
+__projnav/map.log
+IOPR24.cmd_log
+MAP_NO_GUIDE_FILE_CPF "IOPR24"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+IOPR24.twr
+IOPR24.twx
+IOPR24.tsi
+IOPR24.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+IOPR24.ncd
+IOPR24.par
+IOPR24.pad
+IOPR24_pad.txt
+IOPR24_pad.csv
+IOPR24.pad_txt
+IOPR24.dly
+reportgen.log
+IOPR24.xpi
+IOPR24.grf
+IOPR24.itr
+IOPR24_last_par.ncd
+__projnav/par.log
+IOPR24.placed_ncd_tracker
+IOPR24.routed_ncd_tracker
+IOPR24.cmd_log
+PAR_NO_GUIDE_FILE_CPF "IOPR24"
+# Generate Programming File
+__projnav/IOPR24_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+IOPR24.ut
+# Generate Programming File
+IOPR24.bgn
+IOPR24.rbt
+IOPR24.ll
+IOPR24.msk
+IOPR24.drc
+IOPR24.nky
+IOPR24.bit
+IOPR24.bin
+IOPR24.isc
+IOPR24.cmd_log
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\iopr24v/_ngo
+IOPR24.ngd
+IOPR24_ngdbuild.nav
+IOPR24.bld
+IOPR24_PINS.ucf.untf
+IOPR24.cmd_log
+# Implementation : Map
+IOPR24_map.ncd
+IOPR24.ngm
+IOPR24.pcf
+IOPR24.nc1
+IOPR24.mrp
+IOPR24_map.mrp
+IOPR24.mdf
+__projnav/map.log
+IOPR24.cmd_log
+MAP_NO_GUIDE_FILE_CPF "IOPR24"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+IOPR24.twr
+IOPR24.twx
+IOPR24.tsi
+IOPR24.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+IOPR24.ncd
+IOPR24.par
+IOPR24.pad
+IOPR24_pad.txt
+IOPR24_pad.csv
+IOPR24.pad_txt
+IOPR24.dly
+reportgen.log
+IOPR24.xpi
+IOPR24.grf
+IOPR24.itr
+IOPR24_last_par.ncd
+__projnav/par.log
+IOPR24.placed_ncd_tracker
+IOPR24.routed_ncd_tracker
+IOPR24.cmd_log
+PAR_NO_GUIDE_FILE_CPF "IOPR24"
+# Generate Programming File
+__projnav/IOPR24_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+IOPR24.ut
+# Generate Programming File
+IOPR24.bgn
+IOPR24.rbt
+IOPR24.ll
+IOPR24.msk
+IOPR24.drc
+IOPR24.nky
+IOPR24.bit
+IOPR24.bin
+IOPR24.isc
+IOPR24.cmd_log
+# XST (Creating Lso File) : 
+IOPR24.lso
+# xst flow : RunXST
+IOPR24.syr
+IOPR24.prj
+IOPR24.sprj
+IOPR24.ana
+IOPR24.stx
+IOPR24.cmd_log
+IOPR24.ngc
+IOPR24.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\iopr24v/_ngo
+IOPR24.ngd
+IOPR24_ngdbuild.nav
+IOPR24.bld
+IOPR24_PINS.ucf.untf
+IOPR24.cmd_log
+# XST (Creating Lso File) : 
+IOPR24.lso
+# xst flow : RunXST
+IOPR24.syr
+IOPR24.prj
+IOPR24.sprj
+IOPR24.ana
+IOPR24.stx
+IOPR24.cmd_log
+IOPR24.ngc
+IOPR24.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\iopr24v/_ngo
+IOPR24.ngd
+IOPR24_ngdbuild.nav
+IOPR24.bld
+IOPR24_PINS.ucf.untf
+IOPR24.cmd_log
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\iopr24v/_ngo
+IOPR24.ngd
+IOPR24_ngdbuild.nav
+IOPR24.bld
+IOPR24_PINS.ucf.untf
+IOPR24.cmd_log
+# Implementation : Map
+IOPR24_map.ncd
+IOPR24.ngm
+IOPR24.pcf
+IOPR24.nc1
+IOPR24.mrp
+IOPR24_map.mrp
+IOPR24.mdf
+__projnav/map.log
+IOPR24.cmd_log
+MAP_NO_GUIDE_FILE_CPF "IOPR24"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+IOPR24.twr
+IOPR24.twx
+IOPR24.tsi
+IOPR24.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+IOPR24.ncd
+IOPR24.par
+IOPR24.pad
+IOPR24_pad.txt
+IOPR24_pad.csv
+IOPR24.pad_txt
+IOPR24.dly
+reportgen.log
+IOPR24.xpi
+IOPR24.grf
+IOPR24.itr
+IOPR24_last_par.ncd
+__projnav/par.log
+IOPR24.placed_ncd_tracker
+IOPR24.routed_ncd_tracker
+IOPR24.cmd_log
+PAR_NO_GUIDE_FILE_CPF "IOPR24"
+# Generate Programming File
+__projnav/IOPR24_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+IOPR24.ut
+# Generate Programming File
+IOPR24.bgn
+IOPR24.rbt
+IOPR24.ll
+IOPR24.msk
+IOPR24.drc
+IOPR24.nky
+IOPR24.bit
+IOPR24.bin
+IOPR24.isc
+IOPR24.cmd_log
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\iopr24v/_ngo
+IOPR24.ngd
+IOPR24_ngdbuild.nav
+IOPR24.bld
+IOPR24_ORG.ucf.untf
+IOPR24.cmd_log
+# Implementation : Map
+IOPR24_map.ncd
+IOPR24.ngm
+IOPR24.pcf
+IOPR24.nc1
+IOPR24.mrp
+IOPR24_map.mrp
+IOPR24.mdf
+__projnav/map.log
+IOPR24.cmd_log
+MAP_NO_GUIDE_FILE_CPF "IOPR24"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+IOPR24.twr
+IOPR24.twx
+IOPR24.tsi
+IOPR24.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+IOPR24.ncd
+IOPR24.par
+IOPR24.pad
+IOPR24_pad.txt
+IOPR24_pad.csv
+IOPR24.pad_txt
+IOPR24.dly
+reportgen.log
+IOPR24.xpi
+IOPR24.grf
+IOPR24.itr
+IOPR24_last_par.ncd
+__projnav/par.log
+IOPR24.placed_ncd_tracker
+IOPR24.routed_ncd_tracker
+IOPR24.cmd_log
+PAR_NO_GUIDE_FILE_CPF "IOPR24"
+# Generate Programming File
+__projnav/IOPR24_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+IOPR24.ut
+# Generate Programming File
+IOPR24.bgn
+IOPR24.rbt
+IOPR24.ll
+IOPR24.msk
+IOPR24.drc
+IOPR24.nky
+IOPR24.bit
+IOPR24.bin
+IOPR24.isc
+IOPR24.cmd_log
+# XST (Creating Lso File) : 
+IOPR24.lso
+# xst flow : RunXST
+IOPR24.syr
+IOPR24.prj
+IOPR24.sprj
+IOPR24.ana
+IOPR24.stx
+IOPR24.cmd_log
+IOPR24.ngc
+IOPR24.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\iopr24v/_ngo
+IOPR24.ngd
+IOPR24_ngdbuild.nav
+IOPR24.bld
+IOPR24_ORG.ucf.untf
+IOPR24.cmd_log
+# Implementation : Map
+IOPR24_map.ncd
+IOPR24.ngm
+IOPR24.pcf
+IOPR24.nc1
+IOPR24.mrp
+IOPR24_map.mrp
+IOPR24.mdf
+__projnav/map.log
+IOPR24.cmd_log
+MAP_NO_GUIDE_FILE_CPF "IOPR24"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+IOPR24.twr
+IOPR24.twx
+IOPR24.tsi
+IOPR24.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+IOPR24.ncd
+IOPR24.par
+IOPR24.pad
+IOPR24_pad.txt
+IOPR24_pad.csv
+IOPR24.pad_txt
+IOPR24.dly
+reportgen.log
+IOPR24.xpi
+IOPR24.grf
+IOPR24.itr
+IOPR24_last_par.ncd
+__projnav/par.log
+IOPR24.placed_ncd_tracker
+IOPR24.routed_ncd_tracker
+IOPR24.cmd_log
+PAR_NO_GUIDE_FILE_CPF "IOPR24"
+# Generate Programming File
+__projnav/IOPR24_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+IOPR24.ut
+# Generate Programming File
+IOPR24.bgn
+IOPR24.rbt
+IOPR24.ll
+IOPR24.msk
+IOPR24.drc
+IOPR24.nky
+IOPR24.bit
+IOPR24.bin
+IOPR24.isc
+IOPR24.cmd_log
+# XST (Creating Lso File) : 
+WORD24RB.lso
+# xst flow : RunXST
+WORD24RB.syr
+WORD24RB.prj
+WORD24RB.sprj
+WORD24RB.ana
+WORD24RB.stx
+WORD24RB.cmd_log
+WORD24RB.ngr
+# XST (Creating Lso File) : 
+WORDPR24.lso
+# xst flow : RunXST
+WORDPR24.syr
+WORDPR24.prj
+WORDPR24.sprj
+WORDPR24.ana
+WORDPR24.stx
+WORDPR24.cmd_log
+WORDPR24.ngr
+# View RTL Schematic
+WORDPR24.ngr
+# View RTL Schematic
+WORD24RB.ngr
+# XST (Creating Lso File) : 
+IOPR24.lso
+# xst flow : RunXST
+IOPR24.syr
+IOPR24.prj
+IOPR24.sprj
+IOPR24.ana
+IOPR24.stx
+IOPR24.cmd_log
+IOPR24.ngc
+WORDPR24.ngr
+WORD24RB.ngr
+IOPR24.ngr
+# View RTL Schematic
+WORD24RB.ngr
+# View RTL Schematic
+WORDPR24.ngr
+# View RTL Schematic
+WORD24RB.ngr
+# View RTL Schematic
+WORDPR24.ngr
+# View RTL Schematic
+IOPR24.ngr
+# xst flow : RunXST
+IOPR24.syr
+IOPR24.prj
+IOPR24.sprj
+IOPR24.ana
+IOPR24.stx
+IOPR24.cmd_log
+IOPR24.ngc
+WORDPR24.ngr
+WORD24RB.ngr
+IOPR24.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\pcicard\my5i20\iopr24v/_ngo
+IOPR24.ngd
+IOPR24_ngdbuild.nav
+IOPR24.bld
+IOPR24_ORG.ucf.untf
+IOPR24.cmd_log
+# Implementation : Map
+IOPR24_map.ncd
+IOPR24.ngm
+IOPR24.pcf
+IOPR24.nc1
+IOPR24.mrp
+IOPR24_map.mrp
+IOPR24.mdf
+__projnav/map.log
+IOPR24.cmd_log
+MAP_NO_GUIDE_FILE_CPF "IOPR24"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+IOPR24.twr
+IOPR24.twx
+IOPR24.tsi
+IOPR24.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+IOPR24.ncd
+IOPR24.par
+IOPR24.pad
+IOPR24_pad.txt
+IOPR24_pad.csv
+IOPR24.pad_txt
+IOPR24.dly
+reportgen.log
+IOPR24.xpi
+IOPR24.grf
+IOPR24.itr
+IOPR24_last_par.ncd
+__projnav/par.log
+IOPR24.placed_ncd_tracker
+IOPR24.routed_ncd_tracker
+IOPR24.cmd_log
+PAR_NO_GUIDE_FILE_CPF "IOPR24"
+# Generate Programming File
+__projnav/IOPR24_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+IOPR24.ut
+# Generate Programming File
+IOPR24.bgn
+IOPR24.rbt
+IOPR24.ll
+IOPR24.msk
+IOPR24.drc
+IOPR24.nky
+IOPR24.bit
+IOPR24.bin
+IOPR24.isc
+IOPR24.cmd_log
+# Generate PROM, ACE, or JTAG File
+IOPR24.ace
+xilinx.sys
+IOPR24.mpm
+IOPR24.mcs
+IOPR24.prm
+IOPR24.dst
+IOPR24.exo
+IOPR24.tek
+IOPR24.hex
+IOPR24.svf
+IOPR24.stapl
+impact.cmd
+_impact.log
+_impact.cmd

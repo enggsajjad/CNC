@@ -1,0 +1,706 @@
+##############################################
+#      BASIC UCF SYNTAX EXAMPLES V2.1.5      #
+##############################################
+#
+#              TIMING SPECIFICATIONS
+#
+# Timing specifications can be applied to the entire device (global) or to
+# specific groups of login in your PLD design (called "time groups').
+# The time groups are declared in two basic ways.
+#
+# Method 1: Based on a net name, where 'my_net' is a net that touchs all the
+#           logic to be grouped in to 'logic_grp'. Example:
+#NET my_net TNM_NET = logic_grp ;
+#
+# Method 2: Group uing the key word 'TIMEGRP' and declare using the names of
+#           logic in your design. Example:
+#TIMEGRP group_name = FFS ("U1/*");
+#           creates a group called 'group_name' for all flip-flops with in
+#           the hierarchical block called U1. Wildcards are valid.
+#
+# Grouping is very importadatant because it lets you tell the software which parts
+# of a design run at which speeds.  For the majority of the designs with only
+# one clock the very simple global constraints.
+#
+# The type of grouping constraint you use can vary depending on the synthesis
+# tools you are using.  For example, Synplicity does well with Method 1, while
+# FPGA Express does beter with Method 2.
+#
+#
+############################################################
+# Internal to the device clock speed specifications - Tsys #
+############################################################
+#
+# data      _________      /^^^^^\       _________   out
+# ----------| D   Q |-----{ LOGIC } -----| D   Q |------
+#           |       |      \vvvvv/       |       |
+#        ---|> CLK  |                 ---|> CLK  |
+# clock  |  ---------                 |  ---------
+# ------------------------------------
+#
+# ---------------
+# Single Clock
+# ---------------
+#
+# ----------------
+# PERIOD TIME-SPEC
+# ----------------
+# The PERIOD spec. covers all timing paths that start or end at a
+# register, latch, or synchronous RAM which are clocked by the reference
+# net (excluding pad destinations).  Also covered is the setup
+# requirement of the synchronous element relative to other elements
+# (ex. flip flops, pads, etc...).
+# NOTE:  The default unit for time is nanoseconds.
+#
+#NET clock PERIOD = 50ns ;
+#
+#       -OR-
+#
+# ------------------
+# FROM:TO TIME-SPECs
+# ------------------
+# FROM:TO style timespecs can be used to constrain paths between time
+# groups.  NOTE:  Keywords:  RAMS, FFS, PADS, and LATCHES are predefined
+# time groups used to specify all elements of each type in a design.
+#TIMEGRP RFFS = RISING FFS ("*");  // creates a rising group called RFFS
+#TIMEGRP FFFS = FALLING FFS ("*");  // creates a falling group called FFFS
+#TIMESPEC TSF2F  = FROM : FFS   : TO : FFS   : 50 ns; // Flip-flips with the same edge
+#TIMESPEC TSR2F  = FROM : RFFS  : TO : FFFS  : 25 ns; // rising edge to falling edge
+#TIMESPEC TSF2R  = FROM : FFFS  : TO : RFFS  : 25 ns; // falling edge to rising edge
+#
+# ---------------
+# Multiple Clocks
+# ---------------
+# Requires a combination of the 'Period' and 'FROM:TO' type time specifications
+#NET clock1 TNM_NET = clk1_grp ;
+#NET clock2 TNM_NET = clk2_grp ;
+#
+#TIMESPEC TS_clk1 = PERIOD : clk1_grp : 50 ;
+#TIMESPEC TS_clk2 = PERIOD : clk2_grp : 30 ;
+#TIMESPEC TS_ck1_2_ck2 = FROM : clk1_grp : TO : clk2_grp : 50 ;
+#TIMESPEC TS_ck2_2_ck1 = FROM : clk2_grp : TO : clk1_grp : 30 ;
+#
+#
+############################################################
+# CLOCK TO OUT specifications - Tco                        #
+############################################################
+#
+# from      _________      /^^^^^\       --------\
+# ----------| D   Q |-----{ LOGIC } -----| Pad    >
+# PLD       |       |      \vvvvv/       --------/
+#        ---|> CLK  |
+# clock  |  ---------
+# --------
+#
+# ----------------
+# OFFSET TIME-SPEC
+# ----------------
+# To automatically include clock buffer/routing delay in your
+# clock-to-out timing specifications, use OFFSET constraints .
+# For an output where the maximum clock-to-out (Tco) is 25 ns:
+#NET out_net_name OFFSET = OUT 25 AFTER clock_net_name ;
+#
+#      -OR-
+#
+# ------------------
+# FROM:TO TIME-SPECs
+# ------------------
+#TIMESPEC TSF2P  = FROM : FFS   : TO : PADS  : 25 ns;
+# Note that FROM: FFS : TO: PADS constraints start the delay analysis
+# at the flip flop itself, and not the clock input pin.  The recommended
+# method to create a clock-to-out constraint is to use an OFFSET constraint.
+#
+#
+############################################################
+# Pad to Flip-Flop speed specifications - Tsu              #
+############################################################
+#
+# ------\         /^^^^^\       _________   into PLD
+# |pad   >-------{ LOGIC } -----| D   Q |------
+# ------/         \vvvvv/       |       |
+#                            ---|> CLK  |
+# clock                      |  ---------
+# ----------------------------
+#
+# ----------------
+# OFFSET TIME-SPEC
+# ----------------
+# To automatically account for clock delay in your input setup timing
+# specifications, use OFFSET constraints.
+# For an input where the maximum setup time is 25 ns:
+#NET in_net_name OFFSET = IN 25 BEFORE clock_net_name ;
+#
+#      -OR-
+#
+# ------------------
+# FROM:TO TIME-SPECs
+# ------------------
+#TIMESPEC TSP2F  = FROM : PADS  : TO : FFS   : 25 ns;
+# Note that FROM: PADS : TO: FFS constraints do not take into account any
+# delay for the clock path.  The recommended method to create an input
+# setup time constraint is to use an OFFSET constraint.
+#
+#
+############################################################
+# Pad to Pad speed specifications - Tpd                    #
+############################################################
+#
+# ------\         /^^^^^\       -------\
+# |pad   >-------{ LOGIC } -----| pad   >
+# ------/         \vvvvv/       -------/
+#
+# ------------------
+# FROM:TO TIME-SPECs
+# ------------------
+#TIMESPEC TSP2P  = FROM : PADS  : TO : PADS  : 125 ns;
+#
+#
+############################################################
+# Other timing specifications                              #
+############################################################
+#
+# -------------
+# TIMING IGNORE
+# -------------
+# If you can ignore timing of paths, use Timing Ignore (TIG). NOTE: The
+# "*" character is a wild-card which can be used for bus names.  A "?"
+# character can be used to wild-card one character.
+# Ignore timing of net reset_n:
+#NET : reset_n : TIG ;
+#
+# Ignore data_reg(7:0) net in instance mux_mem:
+#NET : mux_mem/data_reg* : TIG ;
+#
+# Ignore data_reg(7:0) net in instance mux_mem as related to a TIMESPEC
+# named TS01 only:
+#NET : mux_mem/data_reg* : TIG = TS01 ;
+#
+# Ignore data1_sig and data2_sig nets:
+#NET : data?_sig : TIG ;
+#
+# ---------------
+# PATH EXCEPTIONS
+# ---------------
+# If your design has outputs that can be slower than others, you can
+# create specific timespecs similar to this example for output nets
+# named out_data(7:0) and irq_n:
+#TIMEGRP slow_outs = PADS(out_data* : irq_n) ;
+#TIMEGRP fast_outs = PADS : EXCEPT : slow_outs ;
+#TIMESPEC TS08 = FROM : FFS : TO : fast_outs : 22 ;
+#TIMESPEC TS09 = FROM : FFS : TO : slow_outs : 75 ;
+#
+# If you have multi-cycle FF to FF paths, you can create a time group
+# using either the TIMEGRP or TNM statements.
+#
+# WARNING:  Many VHDL/verilog synthesizers do not predictably name flip
+# flop Q output nets.  Most synthesizers do assign predictable instance
+# names to flip flops, however.
+#
+# TIMEGRP example:
+#TIMEGRP slowffs = FFS(inst_path/ff_q_output_net1* :
+#inst_path/ff_q_output_net2*);
+#
+# TNM attached to instance example:
+#INST inst_path/ff_instance_name1_reg* TNM = slowffs ;
+#INST inst_path/ff_instance_name2_reg* TNM = slowffs ;
+#
+# If a FF clock-enable is used on all flip flops of a multi-cycle path,
+# you can attach TNM to the clock enable net.  NOTE:  TNM attached to a
+# net "forward traces" to any FF, LATCH, RAM, or PAD attached to the
+# net.
+#NET ff_clock_enable_net TNM = slowffs ;
+#
+# Example of using "slowffs" timegroup, in a FROM:TO timespec, with
+# either of the three timegroup methods shown above:
+#TIMESPEC TS10 = FROM : slowffs : TO : FFS : 100 ;
+#
+# Constrain the skew or delay associate with a net.
+#NET any_net_name MAXSKEW = 7 ;
+#NET any_net_name MAXDELAY = 20 ns;
+#
+#
+# Constraint priority in your .ucf file is as follows:
+#
+#    highest 1.  Timing Ignore (TIG)
+#                 2.  FROM : THRU : TO specs
+#             3.  FROM : TO specs
+#    lowest  4.  PERIOD specs
+#
+# See the on-line "Library Reference Guide" document for
+# additional timespec features and more information.
+#
+#
+############################################################
+#                                                                                                                    #
+#         LOCATION and ATTRIBUTE SPECIFICATIONS                        #
+#                                                                                                                    #
+############################################################
+# Pin and CLB location locking constraints                 #
+############################################################
+#
+# -----------------------
+# Assign an IO pin number
+# -----------------------
+#INST io_buf_instance_name  LOC = P110 ;
+#NET io_net_name  LOC = P111 ;
+#
+# -----------------------
+# Assign a signal to a range of I/O pins
+# -----------------------
+#NET "signal_name" LOC=P32, P33, P34;
+#
+# -----------------------
+# Place a logic element(called a BEL) in a specific CLB location.  BEL = FF, LUT, RAM, etc...
+# -----------------------
+#INST instance_path/BEL_inst_name  LOC = CLB_R17C36 ;
+#
+# -----------------------
+# Place CLB in rectangular area from CLB R1C1 to CLB R5C7
+# -----------------------
+#INST /U1/U2/reg<0> LOC=clb_r1c1:clb_r5c7;
+#
+# -----------------------
+# Place Heirarchial logic block in rectangular area from CLB R1C1 to CLB R5C7
+# -----------------------
+#INST /U1* LOC=clb_r1c1:clb_r5c7;
+#
+# -----------------------
+# Prohibit IO pin P26 or CLBR5C3 from being used:
+# -----------------------
+#CONFIG PROHIBIT = P26 ;
+#CONFIG PROHIBIT = CLB_R5C3 ;
+# Config Prohibit is very importadatant for frocing the software to not use critical
+# configuration pins like INIT or DOUT on the FPGA.  The Mode pins and JTAG
+# Pins require a special pad so they will not be availabe to this constraint
+#
+# -----------------------
+# Assign an OBUF to be FAST or SLOW:
+# -----------------------
+#INST obuf_instance_name FAST ;
+#INST obuf_instance_name SLOW ;
+#
+# -----------------------
+# FPGAs only:  IOB input Flip-flop delay specifcation
+# -----------------------
+# Declare an IOB input FF delay (default = MAXDELAY).
+# NOTE:  MEDDELAY/NODELAY can be attached to a CLB FF that is pushed
+# into an IOB by the "map -pr i" option.
+#INST input_ff_instance_name MEDDELAY ;
+#INST input_ff_instance_name NODELAY ;
+#
+# -----------------------
+# Assign Global Clock Buffers Lower Left Right Side
+# -----------------------
+# INST gbuf1 LOC=SSW
+#
+# #
+NET "lclk" TNM_NET = "lclk";
+TIMESPEC "TS_lclk" = PERIOD "lclk" 15 ns HIGH 50 %;
+NET "ads" LOC = "p98";
+NET "int" LOC = "p112";
+NET "b<1>" LOC = "p96";
+NET "a<1>" LOC = "p94";
+NET "b<0>" LOC = "p89";
+NET "a<0>" LOC = "p87";
+NET "idx<1>" LOC = "p84";
+NET "idx<0>" LOC = "p82";
+NET "pwm<1>" LOC = "p75";
+NET "pwm<0>" LOC = "p73";
+NET "dir<1>" LOC = "p70";
+NET "dir<0>" LOC = "p68";
+NET "ena<1>" LOC = "p63";
+NET "ena<0>" LOC = "p61";
+NET "b<3>" LOC = "p59";
+NET "a<3>" LOC = "p57";
+NET "b<2>" LOC = "p48";
+NET "a<2>" LOC = "p46";
+NET "idx<3>" LOC = "p44";
+NET "idx<2>" LOC = "p42";
+NET "pwm<3>" LOC = "p37";
+NET "pwm<2>" LOC = "p35";
+NET "dir<3>" LOC = "p33";
+NET "dir<2>" LOC = "p30";
+NET "ena<3>" LOC = "p27";
+NET "ena<2>" LOC = "p23";
+NET "lad<0>" LOC = "p153";
+NET "lad<1>" LOC = "p146";
+NET "lad<2>" LOC = "p142";
+NET "lad<3>" LOC = "p135";
+NET "lad<4>" LOC = "p126";
+NET "lad<5>" LOC = "p119";
+NET "lad<6>" LOC = "p115";
+NET "lad<7>" LOC = "p108";
+NET "lad<8>" LOC = "p174";
+NET "lad<9>" LOC = "p173";
+NET "lad<10>" LOC = "p172";
+NET "lad<11>" LOC = "p168";
+NET "lad<12>" LOC = "p167";
+NET "lad<13>" LOC = "p166";
+NET "lad<14>" LOC = "p165";
+NET "lad<15>" LOC = "p164";
+NET "lad<16>" LOC = "p163";
+NET "lad<17>" LOC = "p162";
+NET "lad<18>" LOC = "p152";
+NET "lad<19>" LOC = "p151";
+NET "lad<20>" LOC = "p150";
+NET "lad<21>" LOC = "p149";
+NET "lad<22>" LOC = "p148";
+NET "lad<23>" LOC = "p147";
+NET "lad<24>" LOC = "p141";
+NET "lad<25>" LOC = "p140";
+NET "lad<26>" LOC = "p139";
+NET "lad<27>" LOC = "p138";
+NET "lad<28>" LOC = "p136";
+NET "lad<29>" LOC = "p134";
+NET "lad<30>" LOC = "p133";
+NET "lad<31>" LOC = "p132";
+NET "lclk" LOC = "p182";
+NET "leds<0>" LOC = "p10";
+NET "leds<1>" LOC = "p14";
+NET "leds<2>" LOC = "p15";
+NET "leds<3>" LOC = "p16";
+NET "leds<4>" LOC = "p17";
+NET "leds<5>" LOC = "p18";
+NET "leds<6>" LOC = "p20";
+NET "leds<7>" LOC = "p21";
+NET "lrd" LOC = "p100";
+NET "lwr" LOC = "p160";
+NET "ready" LOC = "p102";
+NET "int" SLOW;
+NET "int" DRIVE = 24;
+NET "b<1>" SLOW;
+NET "a<1>" SLOW;
+NET "b<0>" SLOW;
+NET "a<0>" SLOW;
+NET "idx<1>" SLOW;
+NET "idx<0>" SLOW;
+NET "pwm<1>" SLOW;
+NET "pwm<0>" SLOW;
+NET "dir<1>" SLOW;
+NET "dir<0>" SLOW;
+NET "ena<1>" SLOW;
+NET "ena<0>" SLOW;
+NET "b<3>" SLOW;
+NET "a<3>" SLOW;
+NET "b<2>" SLOW;
+NET "a<2>" SLOW;
+NET "idx<3>" SLOW;
+NET "idx<2>" SLOW;
+NET "pwm<3>" SLOW;
+NET "pwm<2>" SLOW;
+NET "dir<3>" SLOW;
+NET "dir<2>" SLOW;
+NET "ena<3>" SLOW;
+NET "ena<2>" SLOW;
+NET "lad<30>" FAST;
+NET "lad<0>" FAST;
+NET "lad<1>" FAST;
+NET "lad<2>" FAST;
+NET "lad<3>" FAST;
+NET "lad<4>" FAST;
+NET "lad<5>" FAST;
+NET "lad<6>" FAST;
+NET "lad<7>" FAST;
+NET "lad<8>" FAST;
+NET "lad<9>" FAST;
+NET "lad<10>" FAST;
+NET "lad<11>" FAST;
+NET "lad<12>" FAST;
+NET "lad<13>" FAST;
+NET "lad<14>" FAST;
+NET "lad<15>" FAST;
+NET "lad<16>" FAST;
+NET "lad<17>" FAST;
+NET "lad<18>" FAST;
+NET "lad<19>" FAST;
+NET "lad<20>" FAST;
+NET "lad<21>" FAST;
+NET "lad<22>" FAST;
+NET "lad<23>" FAST;
+NET "lad<24>" FAST;
+NET "lad<25>" FAST;
+NET "lad<26>" FAST;
+NET "lad<27>" FAST;
+NET "lad<28>" FAST;
+NET "lad<29>" FAST;
+NET "leds<0>" SLOW;
+NET "leds<1>" SLOW;
+NET "leds<2>" SLOW;
+NET "leds<3>" SLOW;
+NET "leds<4>" SLOW;
+NET "leds<5>" SLOW;
+NET "leds<6>" SLOW;
+NET "leds<7>" SLOW;
+NET "leds<0>" DRIVE = 24;
+NET "leds<1>" DRIVE = 24;
+NET "leds<2>" DRIVE = 24;
+NET "leds<3>" DRIVE = 24;
+NET "leds<4>" DRIVE = 24;
+NET "leds<5>" DRIVE = 24;
+NET "leds<6>" DRIVE = 24;
+NET "leds<7>" DRIVE = 24;
+NET "b<1>" IOSTANDARD = LVTTL;
+NET "a<1>" IOSTANDARD = LVTTL;
+NET "b<0>" IOSTANDARD = LVTTL;
+NET "a<0>" IOSTANDARD = LVTTL;
+NET "idx<1>" IOSTANDARD = LVTTL;
+NET "idx<0>" IOSTANDARD = LVTTL;
+NET "pwm<1>" IOSTANDARD = LVTTL;
+NET "pwm<0>" IOSTANDARD = LVTTL;
+NET "dir<1>" IOSTANDARD = LVTTL;
+NET "dir<0>" IOSTANDARD = LVTTL;
+NET "ena<1>" IOSTANDARD = LVTTL;
+NET "ena<0>" IOSTANDARD = LVTTL;
+NET "b<3>" IOSTANDARD = LVTTL;
+NET "a<3>" IOSTANDARD = LVTTL;
+NET "b<2>" IOSTANDARD = LVTTL;
+NET "a<2>" IOSTANDARD = LVTTL;
+NET "idx<3>" IOSTANDARD = LVTTL;
+NET "idx<2>" IOSTANDARD = LVTTL;
+NET "pwm<3>" IOSTANDARD = LVTTL;
+NET "pwm<2>" IOSTANDARD = LVTTL;
+NET "dir<3>" IOSTANDARD = LVTTL;
+NET "dir<2>" IOSTANDARD = LVTTL;
+NET "ena<3>" IOSTANDARD = LVTTL;
+NET "ena<2>" IOSTANDARD = LVTTL;
+NET "lad<0>" IOSTANDARD = LVTTL;
+NET "lad<1>" IOSTANDARD = LVTTL;
+NET "lad<2>" IOSTANDARD = LVTTL;
+NET "lad<3>" IOSTANDARD = LVTTL;
+NET "lad<4>" IOSTANDARD = LVTTL;
+NET "lad<5>" IOSTANDARD = LVTTL;
+NET "lad<6>" IOSTANDARD = LVTTL;
+NET "lad<7>" IOSTANDARD = LVTTL;
+NET "lad<8>" IOSTANDARD = LVTTL;
+NET "lad<9>" IOSTANDARD = LVTTL;
+NET "lad<10>" IOSTANDARD = LVTTL;
+NET "lad<11>" IOSTANDARD = LVTTL;
+NET "lad<12>" IOSTANDARD = LVTTL;
+NET "lad<13>" IOSTANDARD = LVTTL;
+NET "lad<14>" IOSTANDARD = LVTTL;
+NET "lad<15>" IOSTANDARD = LVTTL;
+NET "lad<16>" IOSTANDARD = LVTTL;
+NET "lad<17>" IOSTANDARD = LVTTL;
+NET "lad<18>" IOSTANDARD = LVTTL;
+NET "lad<19>" IOSTANDARD = LVTTL;
+NET "lad<20>" IOSTANDARD = LVTTL;
+NET "lad<21>" IOSTANDARD = LVTTL;
+NET "lad<22>" IOSTANDARD = LVTTL;
+NET "lad<23>" IOSTANDARD = LVTTL;
+NET "lad<24>" IOSTANDARD = LVTTL;
+NET "lad<25>" IOSTANDARD = LVTTL;
+NET "lad<26>" IOSTANDARD = LVTTL;
+NET "lad<27>" IOSTANDARD = LVTTL;
+NET "lad<28>" IOSTANDARD = LVTTL;
+NET "lad<29>" IOSTANDARD = LVTTL;
+NET "lad<30>" IOSTANDARD = LVTTL;
+NET "lad<31>" IOSTANDARD = LVTTL;
+NET "lad<0>" DRIVE = 8;
+NET "lad<1>" DRIVE = 8;
+NET "lad<2>" DRIVE = 8;
+NET "lad<3>" DRIVE = 8;
+NET "lad<4>" DRIVE = 8;
+NET "lad<5>" DRIVE = 8;
+NET "lad<6>" DRIVE = 8;
+NET "lad<7>" DRIVE = 8;
+NET "lad<8>" DRIVE = 8;
+NET "lad<9>" DRIVE = 8;
+NET "lad<10>" DRIVE = 8;
+NET "lad<11>" DRIVE = 8;
+NET "lad<12>" DRIVE = 8;
+NET "lad<13>" DRIVE = 8;
+NET "lad<14>" DRIVE = 8;
+NET "lad<15>" DRIVE = 8;
+NET "lad<16>" DRIVE = 8;
+NET "lad<17>" DRIVE = 8;
+NET "lad<18>" DRIVE = 8;
+NET "lad<19>" DRIVE = 8;
+NET "lad<20>" DRIVE = 8;
+NET "lad<21>" DRIVE = 8;
+NET "lad<22>" DRIVE = 8;
+NET "lad<23>" DRIVE = 8;
+NET "lad<24>" DRIVE = 8;
+NET "lad<25>" DRIVE = 8;
+NET "lad<26>" DRIVE = 8;
+NET "lad<27>" DRIVE = 8;
+NET "lad<28>" DRIVE = 8;
+NET "lad<29>" DRIVE = 8;
+NET "lad<30>" DRIVE = 8;
+NET "lad<31>" DRIVE = 8;
+NET "lad<31>" FAST;
+TIMESPEC "TS_P2P" = FROM "PADS" TO "PADS" 25 ns;
+OFFSET = OUT 22 ns AFTER "lclk";
+NET "lw_r" LOC = "p101";
+NET "ads" IOSTANDARD = LVTTL;
+NET "int" IOSTANDARD = LVTTL;
+NET "ready" FAST;
+NET "ready" IOSTANDARD = LVTTL;
+NET "leds<0>" IOSTANDARD = LVTTL;
+NET "leds<7>" IOSTANDARD = LVTTL;
+NET "leds<1>" IOSTANDARD = LVTTL;
+NET "leds<2>" IOSTANDARD = LVTTL;
+NET "leds<3>" IOSTANDARD = LVTTL;
+NET "leds<6>" IOSTANDARD = LVTTL;
+NET "leds<5>" IOSTANDARD = LVTTL;
+NET "leds<4>" IOSTANDARD = LVTTL;
+NET "lclk" IOSTANDARD = LVTTL;
+NET "pwm<0>" DRIVE = 24;
+NET "pwm<1>" DRIVE = 24;
+NET "pwm<2>" DRIVE = 24;
+NET "pwm<3>" DRIVE = 24;
+NET "ready" DRIVE = 24;
+NET "dir<0>" DRIVE = 24;
+NET "dir<1>" DRIVE = 24;
+NET "dir<2>" DRIVE = 24;
+NET "dir<3>" DRIVE = 24;
+NET "ena<0>" DRIVE = 24;
+NET "ena<1>" DRIVE = 24;
+NET "ena<2>" DRIVE = 24;
+NET "ena<3>" DRIVE = 24;
+NET "a<4>" LOC = "p86";
+NET "a<5>" LOC = "p90";
+NET "a<6>" LOC = "p45";
+NET "a<7>" LOC = "p49";
+NET "a<8>" LOC = "p189";
+NET "a<9>" LOC = "p187";
+NET "a<10>" LOC = "p205";
+NET "a<11>" LOC = "p203";
+NET "b<4>" LOC = "p88";
+NET "b<5>" LOC = "p95";
+NET "b<6>" LOC = "p47";
+NET "b<7>" LOC = "p58";
+NET "b<8>" LOC = "p188";
+NET "b<9>" LOC = "p181";
+NET "b<10>" LOC = "p204";
+NET "b<11>" LOC = "p202";
+NET "dir<4>" LOC = "p67";
+NET "dir<5>" LOC = "p69";
+NET "dir<6>" LOC = "p29";
+NET "dir<7>" LOC = "p31";
+NET "dir<8>" LOC = "p199";
+NET "dir<9>" LOC = "p195";
+NET "dir<10>" LOC = "p7";
+NET "dir<11>" LOC = "p6";
+NET "ena<4>" LOC = "p60";
+NET "ena<5>" LOC = "p62";
+NET "ena<6>" LOC = "p22";
+NET "ena<7>" LOC = "p24";
+NET "ena<8>" LOC = "p201";
+NET "ena<9>" LOC = "p200";
+NET "ena<10>" LOC = "p9";
+NET "ena<11>" LOC = "p8";
+NET "idx<4>" LOC = "p81";
+NET "idx<5>" LOC = "p83";
+NET "idx<6>" LOC = "p41";
+NET "idx<7>" LOC = "p43";
+NET "idx<8>" LOC = "p192";
+NET "idx<9>" LOC = "p191";
+NET "idx<10>" LOC = "p3";
+NET "idx<11>" LOC = "p206";
+NET "pwm<4>" LOC = "p71";
+NET "pwm<5>" LOC = "p74";
+NET "pwm<6>" LOC = "p34";
+NET "pwm<7>" LOC = "p36";
+NET "pwm<8>" LOC = "p194";
+NET "pwm<9>" LOC = "p193";
+NET "pwm<10>" LOC = "p5";
+NET "pwm<11>" LOC = "p4";
+NET "dir<4>" SLOW;
+NET "dir<5>" SLOW;
+NET "dir<6>" SLOW;
+NET "dir<7>" SLOW;
+NET "dir<8>" SLOW;
+NET "dir<9>" SLOW;
+NET "dir<10>" SLOW;
+NET "dir<11>" SLOW;
+NET "ena<4>" SLOW;
+NET "ena<5>" SLOW;
+NET "ena<6>" SLOW;
+NET "ena<7>" SLOW;
+NET "ena<8>" SLOW;
+NET "ena<9>" SLOW;
+NET "ena<10>" SLOW;
+NET "ena<11>" SLOW;
+NET "pwm<4>" SLOW;
+NET "pwm<5>" SLOW;
+NET "pwm<6>" SLOW;
+NET "pwm<7>" SLOW;
+NET "pwm<8>" SLOW;
+NET "pwm<9>" SLOW;
+NET "pwm<10>" SLOW;
+NET "pwm<11>" SLOW;
+NET "a<4>" IOSTANDARD = LVTTL;
+NET "a<5>" IOSTANDARD = LVTTL;
+NET "a<6>" IOSTANDARD = LVTTL;
+NET "a<7>" IOSTANDARD = LVTTL;
+NET "a<8>" IOSTANDARD = LVTTL;
+NET "a<9>" IOSTANDARD = LVTTL;
+NET "a<10>" IOSTANDARD = LVTTL;
+NET "a<11>" IOSTANDARD = LVTTL;
+NET "b<4>" IOSTANDARD = LVTTL;
+NET "b<5>" IOSTANDARD = LVTTL;
+NET "b<6>" IOSTANDARD = LVTTL;
+NET "b<7>" IOSTANDARD = LVTTL;
+NET "b<8>" IOSTANDARD = LVTTL;
+NET "b<9>" IOSTANDARD = LVTTL;
+NET "b<10>" IOSTANDARD = LVTTL;
+NET "b<11>" IOSTANDARD = LVTTL;
+NET "dir<4>" IOSTANDARD = LVTTL;
+NET "dir<5>" IOSTANDARD = LVTTL;
+NET "dir<6>" IOSTANDARD = LVTTL;
+NET "dir<7>" IOSTANDARD = LVTTL;
+NET "dir<8>" IOSTANDARD = LVTTL;
+NET "dir<9>" IOSTANDARD = LVTTL;
+NET "dir<10>" IOSTANDARD = LVTTL;
+NET "dir<11>" IOSTANDARD = LVTTL;
+NET "dir<4>" DRIVE = 24;
+NET "dir<5>" DRIVE = 24;
+NET "dir<6>" DRIVE = 24;
+NET "dir<7>" DRIVE = 24;
+NET "dir<8>" DRIVE = 24;
+NET "dir<9>" DRIVE = 24;
+NET "dir<10>" DRIVE = 24;
+NET "dir<11>" DRIVE = 24;
+NET "ena<4>" IOSTANDARD = LVTTL;
+NET "ena<5>" IOSTANDARD = LVTTL;
+NET "ena<6>" IOSTANDARD = LVTTL;
+NET "ena<7>" IOSTANDARD = LVTTL;
+NET "ena<8>" IOSTANDARD = LVTTL;
+NET "ena<9>" IOSTANDARD = LVTTL;
+NET "ena<10>" IOSTANDARD = LVTTL;
+NET "ena<11>" IOSTANDARD = LVTTL;
+NET "ena<4>" DRIVE = 24;
+NET "ena<5>" DRIVE = 24;
+NET "ena<6>" DRIVE = 24;
+NET "ena<7>" DRIVE = 24;
+NET "ena<8>" DRIVE = 24;
+NET "ena<9>" DRIVE = 24;
+NET "ena<10>" DRIVE = 24;
+NET "ena<11>" DRIVE = 24;
+NET "idx<4>" IOSTANDARD = LVTTL;
+NET "idx<5>" IOSTANDARD = LVTTL;
+NET "idx<6>" IOSTANDARD = LVTTL;
+NET "idx<7>" IOSTANDARD = LVTTL;
+NET "idx<8>" IOSTANDARD = LVTTL;
+NET "idx<9>" IOSTANDARD = LVTTL;
+NET "idx<10>" IOSTANDARD = LVTTL;
+NET "idx<11>" IOSTANDARD = LVTTL;
+NET "lrd" IOSTANDARD = LVTTL;
+NET "lwr" IOSTANDARD = LVTTL;
+NET "lw_r" IOSTANDARD = LVTTL;
+NET "pwm<4>" IOSTANDARD = LVTTL;
+NET "pwm<5>" IOSTANDARD = LVTTL;
+NET "pwm<6>" IOSTANDARD = LVTTL;
+NET "pwm<7>" IOSTANDARD = LVTTL;
+NET "pwm<8>" IOSTANDARD = LVTTL;
+NET "pwm<9>" IOSTANDARD = LVTTL;
+NET "pwm<10>" IOSTANDARD = LVTTL;
+NET "pwm<11>" IOSTANDARD = LVTTL;
+NET "pwm<4>" DRIVE = 24;
+NET "pwm<5>" DRIVE = 24;
+NET "pwm<6>" DRIVE = 24;
+NET "pwm<7>" DRIVE = 24;
+NET "pwm<8>" DRIVE = 24;
+NET "pwm<9>" DRIVE = 24;
+NET "pwm<10>" DRIVE = 24;
+NET "pwm<11>" DRIVE = 24;

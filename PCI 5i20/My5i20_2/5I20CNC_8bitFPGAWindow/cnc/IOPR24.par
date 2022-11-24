@@ -1,0 +1,135 @@
+
+Constraints file: IOPR24.pcf
+
+Loading device database for application Par from file "IOPR24_map.ncd".
+   "IOPR24" is an NCD, version 2.38, device xc2s200, package pq208, speed -6
+Loading device for application Par from file 'v200.nph' in environment
+C:/Xilinx.
+Device speed data version:  PRODUCTION 1.27 2003-06-19.
+
+
+Resolved that IOB <ST_CLK> must be placed at site P96.
+Resolved that IOB <LEDS<0>> must be placed at site P10.
+Resolved that IOB <LEDS<1>> must be placed at site P14.
+Resolved that IOB <LEDS<2>> must be placed at site P15.
+Resolved that IOB <LEDS<3>> must be placed at site P16.
+Resolved that IOB <LEDS<4>> must be placed at site P17.
+Resolved that IOB <LEDS<5>> must be placed at site P18.
+Resolved that IOB <LEDS<6>> must be placed at site P20.
+Resolved that IOB <LEDS<7>> must be placed at site P21.
+Resolved that IOB <LWR> must be placed at site P160.
+Resolved that IOB <LAD<0>> must be placed at site P153.
+Resolved that IOB <LAD<1>> must be placed at site P146.
+Resolved that IOB <LAD<2>> must be placed at site P142.
+Resolved that IOB <ADS> must be placed at site P98.
+Resolved that IOB <LAD<3>> must be placed at site P135.
+Resolved that IOB <LAD<4>> must be placed at site P126.
+Resolved that IOB <LAD<5>> must be placed at site P119.
+Resolved that IOB <LAD<6>> must be placed at site P115.
+Resolved that IOB <LAD<7>> must be placed at site P108.
+Resolved that GCLKIOB <LClk> must be placed at site P185.
+
+
+Device utilization summary:
+
+   Number of External GCLKIOBs         1 out of 4      25%
+   Number of External IOBs            19 out of 140    13%
+      Number of LOCed External IOBs   19 out of 19    100%
+
+   Number of SLICEs                   52 out of 2352    2%
+
+   Number of GCLKs                     1 out of 4      25%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+
+Phase 1.1
+Phase 1.1 (Checksum:9897c8) REAL time: 0 secs 
+
+Phase 2.23
+Phase 2.23 (Checksum:1312cfe) REAL time: 0 secs 
+
+Phase 3.3
+Phase 3.3 (Checksum:1c9c37d) REAL time: 0 secs 
+
+Phase 4.5
+Phase 4.5 (Checksum:26259fc) REAL time: 0 secs 
+
+Phase 5.8
+.
+Phase 5.8 (Checksum:9a81ce) REAL time: 0 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 0 secs 
+
+Phase 7.18
+Phase 7.18 (Checksum:42c1d79) REAL time: 0 secs 
+
+Writing design to file IOPR24.ncd.
+
+Total REAL time to Placer completion: 0 secs 
+Total CPU time to Placer completion: 0 secs 
+
+
+Phase 1: 292 unrouted;       REAL time: 0 secs 
+
+Phase 2: 254 unrouted;       REAL time: 0 secs 
+
+Phase 3: 50 unrouted;       REAL time: 0 secs 
+
+Phase 4: 0 unrouted;       REAL time: 0 secs 
+
+Total REAL time to Router completion: 0 secs 
+Total CPU time to Router completion: 0 secs 
+
+Generating "par" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++----------------------------+----------+--------+------------+-------------+
+|         Clock Net          | Resource | Fanout |Net Skew(ns)|Max Delay(ns)|
++----------------------------+----------+--------+------------+-------------+
+|        LClk_BUFGP          |  Global  |   38   |  0.127     |  0.559      |
++----------------------------+----------+--------+------------+-------------+
+
+
+   The Delay Summary Report
+
+   The SCORE FOR THIS DESIGN is: 169
+
+
+The NUMBER OF SIGNALS NOT COMPLETELY ROUTED for this design is: 0
+
+   The AVERAGE CONNECTION DELAY for this design is:        1.068
+   The MAXIMUM PIN DELAY IS:                               4.232
+   The AVERAGE CONNECTION DELAY on the 10 WORST NETS is:   3.087
+
+   Listing Pin Delays by value: (nsec)
+
+    d < 1.00   < d < 2.00  < d < 3.00  < d < 4.00  < d < 5.00  d >= 5.00
+   ---------   ---------   ---------   ---------   ---------   ---------
+         167          94          21           9           1           0
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 0 secs 
+Total CPU time to PAR completion: 1 secs 
+
+Peak Memory Usage:  53 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Writing design to file IOPR24.ncd.
+
+
+PAR done.

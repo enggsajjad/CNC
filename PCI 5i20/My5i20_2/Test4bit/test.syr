@@ -1,0 +1,257 @@
+Release 6.1i - xst G.23
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.17 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.17 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Reading design: test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : test.prj
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+Verilog Include Directory          : 
+
+---- Target Parameters
+Output File Name                   : test
+Output Format                      : NGC
+Target Device                      : xc2s200-6-pq208
+
+---- Source Options
+Top Module Name                    : test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : lut
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100
+Add Generic Clock Buffer(BUFG)     : 4
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : test.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+Optimize Instantiated Primitives   : NO
+
+=========================================================================
+
+WARNING:Xst:1885 - LSO file is empty, default list of libraries is used
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling source file "test.v"
+Module <test> compiled
+No errors in compilation
+Analysis of file <test.prj> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <test>.
+Module <test> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <test>.
+    Related source file is test.v.
+WARNING:Xst:1779 - Inout <LAD> is used but is never assigned.
+    Found 4-bit register for signal <A>.
+    Found 4-bit register for signal <D>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <test> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 2
+  4-bit register                   : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <test> ...
+Loading device for application Xst from file 'v200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block test, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : test.ngr
+Top Level Output File Name         : test
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 15
+
+Macro Statistics :
+# Registers                        : 2
+#      4-bit register              : 2
+
+Cell Usage :
+# BELS                             : 2
+#      LUT1                        : 2
+# FlipFlops/Latches                : 8
+#      FDE                         : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 6
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2s200pq208-6 
+
+ Number of Slices:                       5  out of   2352     0%  
+ Number of Slice Flip Flops:             8  out of   4704     0%  
+ Number of 4 input LUTs:                 2  out of   4704     0%  
+ Number of bonded IOBs:                 14  out of    144     9%  
+ Number of GCLKs:                        1  out of      4    25%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+LClk                               | BUFGP                  | 8     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -6
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 4.686ns
+   Maximum output required time after clock: 6.788ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'LClk'
+Offset:              4.686ns (Levels of Logic = 2)
+  Source:            LWR (PAD)
+  Destination:       D_3 (FF)
+  Destination Clock: LClk rising
+
+  Data Path: LWR to D_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.776   1.035  LWR_IBUF (LWR_IBUF)
+     LUT1:I0->O            4   0.549   1.440  D_ClkEn_INV1 (D_N5)
+     FDE:CE                    0.886          D_0
+    ----------------------------------------
+    Total                      4.686ns (2.211ns logic, 2.475ns route)
+                                       (47.2% logic, 52.8% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LClk'
+Offset:              6.788ns (Levels of Logic = 1)
+  Source:            D_3 (FF)
+  Destination:       LEDS<7> (PAD)
+  Source Clock:      LClk rising
+
+  Data Path: D_3 to LEDS<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   1.085   1.035  D_3 (D_3)
+     OBUF:I->O                 4.668          LEDS_7_OBUF (LEDS<7>)
+    ----------------------------------------
+    Total                      6.788ns (5.753ns logic, 1.035ns route)
+                                       (84.8% logic, 15.2% route)
+
+=========================================================================
+CPU : 0.88 / 1.23 s | Elapsed : 1.00 / 2.00 s
+ 
+--> 
+
+Total memory usage is 58300 kilobytes
+
+

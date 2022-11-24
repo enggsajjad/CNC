@@ -1,0 +1,230 @@
+Release 6.1i - Par G.23
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+Fri May 10 17:27:10 2013
+
+
+INPUT FILE:       IOPR24_map.ncd
+OUTPUT FILE:      IOPR24_pad.txt
+PART TYPE:        xc2s200
+SPEED GRADE:      -6
+PACKAGE:          pq208
+
+Pinout by Pin Number:
+
+-----     |-----      |-----    |-----       |-----    |-----      |-----         |-----     |-----    |-----      |-----    |-----  |-----     |
+Pin Number|Signal Name|Pin Usage|Pin Name    |Direction|IO Standard|IO Bank Number|Drive (mA)|Slew Rate|Termination|IOB Delay|Voltage|Constraint|
+P1        |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P10       |LEDS<0>    |IOB      |            |OUTPUT   |LVTTL      |(0,7)***      |24        |SLOW     |NONE**     |         |       |LOCATED   |
+P100      |LRD        |IOB      |IO_VREF_4   |INPUT    |LVTTL      |(0,4)***      |          |         |           |NONE     |       |LOCATED   |
+P101      |LW_R       |IOB      |            |INPUT    |LVTTL      |(0,4)***      |          |         |           |NONE     |       |LOCATED   |
+P102      |           |IOB      |            |UNUSED   |           |(0,4)***      |          |         |           |         |       |          |
+P103      |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P104      |           |         |DONE        |         |           |              |          |         |           |         |       |          |
+P105      |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P106      |           |         |PROGRAM     |         |           |              |          |         |           |         |       |          |
+P107      |           |IOB      |IO_INIT     |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P108      |LAD<7>     |IOB      |IO_D7       |BIDIR    |LVTTL      |(0,3)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P109      |           |IOB      |IO_VREF_3   |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P11       |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P110      |           |IOB      |            |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P111      |           |IOB      |IO_VREF_3   |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P112      |           |IOB      |            |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P113      |           |IOB      |            |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P114      |           |IOB      |IO_VREF_3   |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P115      |LAD<6>     |IOB      |IO_D6       |BIDIR    |LVTTL      |(0,3)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P116      |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P117      |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P118      |           |         |VCCINT      |         |           |              |          |         |           |         |2.5    |          |
+P119      |LAD<5>     |IOB      |IO_D5       |BIDIR    |LVTTL      |(0,3)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P12       |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P120      |           |IOB      |            |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P121      |           |IOB      |            |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P122      |           |IOB      |            |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P123      |           |IOB      |            |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P124      |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P125      |           |IOB      |IO_VREF_3   |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P126      |LAD<4>     |IOB      |IO_D4       |BIDIR    |LVTTL      |(0,3)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P127      |           |IOB      |            |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P128      |           |         |VCCINT      |         |           |              |          |         |           |         |2.5    |          |
+P129      |           |PCIIOB   |IO_TRDY     |UNUSED   |           |(0,3)***      |          |         |           |         |       |          |
+P13       |           |         |VCCINT      |         |           |              |          |         |           |         |2.5    |          |
+P130      |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P131      |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P132      |LAD<31>    |IOB      |IO_IRDY     |TRISTATE |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |         |       |LOCATED   |
+P133      |LAD<30>    |IOB      |            |TRISTATE |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |         |       |LOCATED   |
+P134      |LAD<29>    |IOB      |            |TRISTATE |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |         |       |LOCATED   |
+P135      |LAD<3>     |IOB      |IO_D3       |BIDIR    |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P136      |LAD<28>    |IOB      |IO_VREF_2   |TRISTATE |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |         |       |LOCATED   |
+P137      |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P138      |LAD<27>    |IOB      |            |TRISTATE |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |         |       |LOCATED   |
+P139      |LAD<26>    |IOB      |            |TRISTATE |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |         |       |LOCATED   |
+P14       |LEDS<1>    |IOB      |            |OUTPUT   |LVTTL      |(0,7)***      |24        |SLOW     |NONE**     |         |       |LOCATED   |
+P140      |LAD<25>    |IOB      |            |TRISTATE |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |         |       |LOCATED   |
+P141      |LAD<24>    |IOB      |            |TRISTATE |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |         |       |LOCATED   |
+P142      |LAD<2>     |IOB      |IO_D2       |BIDIR    |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P143      |           |         |VCCINT      |         |           |              |          |         |           |         |2.5    |          |
+P144      |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P145      |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P146      |LAD<1>     |IOB      |IO_D1       |BIDIR    |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P147      |LAD<23>    |IOB      |IO_VREF_2   |BIDIR    |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P148      |LAD<22>    |IOB      |            |BIDIR    |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P149      |LAD<21>    |IOB      |            |BIDIR    |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P15       |LEDS<2>    |IOB      |            |OUTPUT   |LVTTL      |(0,7)***      |24        |SLOW     |NONE**     |         |       |LOCATED   |
+P150      |LAD<20>    |IOB      |IO_VREF_2   |BIDIR    |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P151      |LAD<19>    |IOB      |            |BIDIR    |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P152      |LAD<18>    |IOB      |IO_VREF_2   |BIDIR    |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P153      |LAD<0>     |IOB      |IO_DIN_D0   |BIDIR    |LVTTL      |(0,2)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P154      |           |IOB      |IO_DOUT_BUSY|UNUSED   |           |(0,2)***      |          |         |           |         |       |          |
+P155      |           |         |CCLK        |         |           |              |          |         |           |         |       |          |
+P156      |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P157      |           |         |TDO         |         |           |              |          |         |           |         |       |          |
+P158      |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P159      |           |         |TDI         |         |           |              |          |         |           |         |       |          |
+P16       |LEDS<3>    |IOB      |            |OUTPUT   |LVTTL      |(0,7)***      |24        |SLOW     |NONE**     |         |       |LOCATED   |
+P160      |LWR        |IOB      |IO_CS       |INPUT    |LVTTL      |(0,1)***      |          |         |           |NONE     |       |LOCATED   |
+P161      |           |IOB      |IO_WRITE    |UNUSED   |           |(0,1)***      |          |         |           |         |       |          |
+P162      |LAD<17>    |IOB      |IO_VREF_1   |BIDIR    |LVTTL      |(0,1)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P163      |LAD<16>    |IOB      |            |BIDIR    |LVTTL      |(0,1)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P164      |LAD<15>    |IOB      |IO_VREF_1   |BIDIR    |LVTTL      |(0,1)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P165      |LAD<14>    |IOB      |            |BIDIR    |LVTTL      |(0,1)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P166      |LAD<13>    |IOB      |            |BIDIR    |LVTTL      |(0,1)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P167      |LAD<12>    |IOB      |IO_VREF_1   |BIDIR    |LVTTL      |(0,1)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P168      |LAD<11>    |IOB      |            |BIDIR    |LVTTL      |(0,1)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P169      |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P17       |LEDS<4>    |IOB      |            |OUTPUT   |LVTTL      |(0,7)***      |24        |SLOW     |NONE**     |         |       |LOCATED   |
+P170      |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P171      |           |         |VCCINT      |         |           |              |          |         |           |         |2.5    |          |
+P172      |LAD<10>    |IOB      |            |BIDIR    |LVTTL      |(0,1)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P173      |LAD<9>     |IOB      |            |BIDIR    |LVTTL      |(0,1)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P174      |LAD<8>     |IOB      |            |BIDIR    |LVTTL      |(0,1)***      |8         |FAST     |NONE**     |IFD      |       |LOCATED   |
+P175      |           |IOB      |            |UNUSED   |           |(0,1)***      |          |         |           |         |       |          |
+P176      |           |IOB      |            |UNUSED   |           |(0,1)***      |          |         |           |         |       |          |
+P177      |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P178      |           |IOB      |IO_VREF_1   |UNUSED   |           |(0,1)***      |          |         |           |         |       |          |
+P179      |           |IOB      |            |UNUSED   |           |(0,1)***      |          |         |           |         |       |          |
+P18       |LEDS<5>    |IOB      |            |OUTPUT   |LVTTL      |(0,7)***      |24        |SLOW     |NONE**     |         |       |LOCATED   |
+P180      |           |IOB      |            |UNUSED   |           |(0,1)***      |          |         |           |         |       |          |
+P181      |IOBits<48> |IOB      |            |BIDIR    |LVTTL      |(0,1)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P182      |LClk       |GCLKIOB  |GCK2        |INPUT    |LVTTL      |(0,1)***      |          |         |           |         |       |LOCATED   |
+P183      |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P184      |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P185      |SYNCLK     |GCLKIOB  |GCK3        |INPUT    |LVTTL      |0             |          |         |           |         |       |LOCATED   |
+P186      |           |         |VCCINT      |         |           |              |          |         |           |         |2.5    |          |
+P187      |IOBits<49> |IOB      |            |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P188      |IOBits<50> |IOB      |            |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P189      |IOBits<51> |IOB      |IO_VREF_0   |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P19       |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P190      |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P191      |IOBits<52> |IOB      |            |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P192      |IOBits<53> |IOB      |            |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P193      |IOBits<54> |IOB      |            |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P194      |IOBits<55> |IOB      |            |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P195      |IOBits<56> |IOB      |            |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P196      |           |         |VCCINT      |         |           |              |          |         |           |         |2.5    |          |
+P197      |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P198      |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P199      |IOBits<57> |IOB      |            |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P2        |           |         |TMS         |         |           |              |          |         |           |         |       |          |
+P20       |LEDS<6>    |IOB      |IO_VREF_7   |OUTPUT   |LVTTL      |(0,7)***      |24        |SLOW     |NONE**     |         |       |LOCATED   |
+P200      |IOBits<58> |IOB      |IO_VREF_0   |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P201      |IOBits<59> |IOB      |            |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P202      |IOBits<60> |IOB      |            |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P203      |IOBits<61> |IOB      |IO_VREF_0   |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P204      |IOBits<62> |IOB      |            |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P205      |IOBits<63> |IOB      |IO_VREF_0   |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P206      |IOBits<64> |IOB      |            |BIDIR    |LVTTL      |0             |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P207      |           |         |TCK         |         |           |              |          |         |           |         |       |          |
+P208      |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P21       |LEDS<7>    |IOB      |            |OUTPUT   |LVTTL      |(0,7)***      |24        |SLOW     |NONE**     |         |       |LOCATED   |
+P22       |IOBits<47> |IOB      |            |BIDIR    |LVTTL      |(0,7)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P23       |IOBits<23> |IOB      |            |BIDIR    |LVTTL      |(0,7)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P24       |IOBits<46> |IOB      |IO_IRDY     |BIDIR    |LVTTL      |(0,7)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P25       |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P26       |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P27       |IOBits<22> |IOB      |IO_TRDY     |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P28       |           |         |VCCINT      |         |           |              |          |         |           |         |2.5    |          |
+P29       |IOBits<45> |IOB      |            |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P3        |IOBits<65> |IOB      |            |BIDIR    |LVTTL      |(0,7)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P30       |IOBits<21> |IOB      |            |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P31       |IOBits<44> |IOB      |IO_VREF_6   |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P32       |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P33       |IOBits<20> |IOB      |            |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P34       |IOBits<43> |IOB      |            |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P35       |IOBits<19> |IOB      |            |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P36       |IOBits<42> |IOB      |            |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P37       |IOBits<18> |IOB      |            |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P38       |           |         |VCCINT      |         |           |              |          |         |           |         |2.5    |          |
+P39       |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P4        |IOBits<66> |IOB      |IO_VREF_7   |BIDIR    |LVTTL      |(0,7)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P40       |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P41       |IOBits<41> |IOB      |            |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P42       |IOBits<17> |IOB      |IO_VREF_6   |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P43       |IOBits<40> |IOB      |            |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P44       |IOBits<16> |IOB      |            |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P45       |IOBits<39> |IOB      |IO_VREF_6   |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P46       |IOBits<15> |IOB      |            |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P47       |IOBits<38> |IOB      |IO_VREF_6   |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P48       |IOBits<14> |IOB      |            |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P49       |IOBits<37> |IOB      |            |BIDIR    |LVTTL      |(0,6)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P5        |IOBits<67> |IOB      |            |BIDIR    |LVTTL      |(0,7)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P50       |           |         |M1          |         |           |              |          |         |           |         |       |          |
+P51       |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P52       |           |         |M0          |         |           |              |          |         |           |         |       |          |
+P53       |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P54       |           |         |M2          |         |           |              |          |         |           |         |       |          |
+P57       |IOBits<13> |IOB      |IO_VREF_5   |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P58       |IOBits<36> |IOB      |            |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P59       |IOBits<12> |IOB      |IO_VREF_5   |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P6        |IOBits<68> |IOB      |IO_VREF_7   |BIDIR    |LVTTL      |(0,7)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P60       |IOBits<35> |IOB      |            |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P61       |IOBits<11> |IOB      |            |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P62       |IOBits<34> |IOB      |IO_VREF_5   |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P63       |IOBits<10> |IOB      |            |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P64       |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P65       |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P66       |           |         |VCCINT      |         |           |              |          |         |           |         |2.5    |          |
+P67       |IOBits<33> |IOB      |            |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P68       |IOBits<9>  |IOB      |            |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P69       |IOBits<32> |IOB      |            |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P7        |IOBits<69> |IOB      |            |BIDIR    |LVTTL      |(0,7)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P70       |IOBits<8>  |IOB      |            |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P71       |IOBits<31> |IOB      |            |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P72       |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P73       |IOBits<7>  |IOB      |IO_VREF_5   |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P74       |IOBits<30> |IOB      |            |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P75       |IOBits<6>  |IOB      |            |BIDIR    |LVTTL      |(0,5)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P76       |           |         |VCCINT      |         |           |              |          |         |           |         |2.5    |          |
+P77       |           |GCLKIOB  |GCK1        |UNUSED   |           |(0,5)***      |          |         |           |         |       |          |
+P78       |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P79       |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P8        |IOBits<70> |IOB      |            |BIDIR    |LVTTL      |(0,7)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P80       |           |GCLKIOB  |GCK0        |UNUSED   |           |(0,4)***      |          |         |           |         |       |          |
+P81       |IOBits<29> |IOB      |            |BIDIR    |LVTTL      |(0,4)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P82       |IOBits<5>  |IOB      |            |BIDIR    |LVTTL      |(0,4)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P83       |IOBits<28> |IOB      |            |BIDIR    |LVTTL      |(0,4)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P84       |IOBits<4>  |IOB      |IO_VREF_4   |BIDIR    |LVTTL      |(0,4)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P85       |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P86       |IOBits<27> |IOB      |            |BIDIR    |LVTTL      |(0,4)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P87       |IOBits<3>  |IOB      |            |BIDIR    |LVTTL      |(0,4)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P88       |IOBits<26> |IOB      |            |BIDIR    |LVTTL      |(0,4)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P89       |IOBits<2>  |IOB      |            |BIDIR    |LVTTL      |(0,4)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P9        |IOBits<71> |IOB      |IO_VREF_7   |BIDIR    |LVTTL      |(0,7)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P90       |IOBits<25> |IOB      |            |BIDIR    |LVTTL      |(0,4)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P91       |           |         |VCCINT      |         |           |              |          |         |           |         |2.5    |          |
+P92       |           |         |VCCO        |         |           |0             |          |         |           |         |3.30   |          |
+P93       |           |         |GND         |         |           |              |          |         |           |         |       |          |
+P94       |IOBits<1>  |IOB      |            |BIDIR    |LVTTL      |(0,4)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P95       |IOBits<24> |IOB      |IO_VREF_4   |BIDIR    |LVTTL      |(0,4)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P96       |IOBits<0>  |IOB      |            |BIDIR    |LVTTL      |(0,4)***      |12        |SLOW     |NONE**     |NONE     |       |LOCATED   |
+P97       |           |IOB      |            |UNUSED   |           |(0,4)***      |          |         |           |         |       |          |
+P98       |ADS        |IOB      |IO_VREF_4   |INPUT    |LVTTL      |(0,4)***      |          |         |           |NONE     |       |LOCATED   |
+P99       |           |IOB      |            |UNUSED   |           |(0,4)***      |          |         |           |         |       |          |
+
+-----     |-----      |-----    |-----       |-----    |-----      |-----         |-----     |-----    |-----      |-----    |-----  |-----     |
+
+* Default value.
+** This default Pullup/Pulldown value can be overridden in Bitgen.
+*** In some smaller packages, the VCCO bank number of a pin may trail
+     the VREF bank number (VCCO,VREF).
+

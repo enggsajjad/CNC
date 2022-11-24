@@ -1,0 +1,21 @@
+# Xilinx CORE Generator 6.1i
+# User = Sajjad
+Initializing default project...
+Loading plug-ins...
+All runtime messages will be recorded in F:\My5i20\5I20CNC_32bitFPGAWindow\cnc\coregen.log
+# busformat=BusFormatAngleBracketNotRipped
+# designflow=VHDL
+# expandedprojectpath=F:\My5i20\5I20CNC_32bitFPGAWindow\cnc
+# flowvendor=Foundation_iSE
+# formalverification=None
+# simulationoutputproducts=VHDL
+# xilinxfamily=Virtex2
+# outputoption=DesignFlow
+# overwritefiles=Default
+# simvendor=ModelSim
+# expandedprojectpath=F:\My5i20\5I20CNC_32bitFPGAWindow\cnc
+SETPROJECT .
+Set current Project to F:\My5i20\5I20CNC_32bitFPGAWindow\cnc
+SET BusFormat = BusFormatAngleBracketNotRipped
+SETXIPCPORTHOST 1042
+XIPCPJSENDCORES spartan2

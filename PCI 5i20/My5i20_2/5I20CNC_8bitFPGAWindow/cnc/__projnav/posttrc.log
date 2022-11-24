@@ -1,0 +1,4 @@
+Post Route Timing Report for Module IOPR24 . . .
+TRACE command line and options:
+trce -intstyle ise -e 3 -l 3 -xml IOPR24 IOPR24.ncd -o IOPR24.twr IOPR24.pcf
+Post Route Timing Report for Module IOPR24 : DONE

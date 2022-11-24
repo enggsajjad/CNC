@@ -1,0 +1,118 @@
+--------------------------------------------------------------------------------
+Release 6.1i Trace G.23
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+C:/Xilinx/bin/nt/trce.exe -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr
+CNC.pcf
+
+
+Design file:              CNC.ncd
+Physical constraint file: CNC.pcf
+Device,speed:             xc2s200,-6 (PRODUCTION 1.27 2003-06-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock LClk
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  |  Clock |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) |  Phase |
+------------+------------+------------+------------------+--------+
+ADS         |    4.255(R)|   -2.903(R)|LClk_BUFGP        |   0.000|
+LAD<0>      |    2.145(R)|   -0.640(R)|LClk_BUFGP        |   0.000|
+LAD<10>     |    2.067(R)|   -0.562(R)|LClk_BUFGP        |   0.000|
+LAD<11>     |    2.067(R)|   -0.562(R)|LClk_BUFGP        |   0.000|
+LAD<12>     |    2.067(R)|   -0.562(R)|LClk_BUFGP        |   0.000|
+LAD<13>     |    2.103(R)|   -0.598(R)|LClk_BUFGP        |   0.000|
+LAD<14>     |    2.075(R)|   -0.570(R)|LClk_BUFGP        |   0.000|
+LAD<15>     |    2.075(R)|   -0.570(R)|LClk_BUFGP        |   0.000|
+LAD<16>     |    2.106(R)|   -0.601(R)|LClk_BUFGP        |   0.000|
+LAD<17>     |    2.108(R)|   -0.603(R)|LClk_BUFGP        |   0.000|
+LAD<18>     |    2.145(R)|   -0.640(R)|LClk_BUFGP        |   0.000|
+LAD<19>     |    2.145(R)|   -0.640(R)|LClk_BUFGP        |   0.000|
+LAD<1>      |    2.153(R)|   -0.648(R)|LClk_BUFGP        |   0.000|
+LAD<20>     |    2.153(R)|   -0.648(R)|LClk_BUFGP        |   0.000|
+LAD<21>     |    2.153(R)|   -0.648(R)|LClk_BUFGP        |   0.000|
+LAD<22>     |    2.145(R)|   -0.640(R)|LClk_BUFGP        |   0.000|
+LAD<23>     |    2.145(R)|   -0.640(R)|LClk_BUFGP        |   0.000|
+LAD<24>     |    2.153(R)|   -0.648(R)|LClk_BUFGP        |   0.000|
+LAD<25>     |    2.145(R)|   -0.640(R)|LClk_BUFGP        |   0.000|
+LAD<26>     |    2.153(R)|   -0.648(R)|LClk_BUFGP        |   0.000|
+LAD<27>     |    2.153(R)|   -0.648(R)|LClk_BUFGP        |   0.000|
+LAD<28>     |    2.153(R)|   -0.648(R)|LClk_BUFGP        |   0.000|
+LAD<29>     |    2.145(R)|   -0.640(R)|LClk_BUFGP        |   0.000|
+LAD<2>      |    2.153(R)|   -0.648(R)|LClk_BUFGP        |   0.000|
+LAD<30>     |    2.153(R)|   -0.648(R)|LClk_BUFGP        |   0.000|
+LAD<31>     |    2.153(R)|   -0.648(R)|LClk_BUFGP        |   0.000|
+LAD<3>      |    2.145(R)|   -0.640(R)|LClk_BUFGP        |   0.000|
+LAD<4>      |    2.145(R)|   -0.640(R)|LClk_BUFGP        |   0.000|
+LAD<5>      |    2.153(R)|   -0.648(R)|LClk_BUFGP        |   0.000|
+LAD<6>      |    2.153(R)|   -0.648(R)|LClk_BUFGP        |   0.000|
+LAD<7>      |    2.145(R)|   -0.640(R)|LClk_BUFGP        |   0.000|
+LAD<8>      |    2.099(R)|   -0.594(R)|LClk_BUFGP        |   0.000|
+LAD<9>      |    2.067(R)|   -0.562(R)|LClk_BUFGP        |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock LClk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  |  Clock |
+Destination | to PAD     |Internal Clock(s) |  Phase |
+------------+------------+------------------+--------+
+LEDS<0>     |    8.878(R)|LClk_BUFGP        |   0.000|
+LEDS<1>     |   10.122(R)|LClk_BUFGP        |   0.000|
+LEDS<2>     |   10.242(R)|LClk_BUFGP        |   0.000|
+LEDS<3>     |   12.537(R)|LClk_BUFGP        |   0.000|
+LEDS<4>     |    9.430(R)|LClk_BUFGP        |   0.000|
+LEDS<5>     |   11.405(R)|LClk_BUFGP        |   0.000|
+LEDS<6>     |   11.135(R)|LClk_BUFGP        |   0.000|
+LEDS<7>     |   11.104(R)|LClk_BUFGP        |   0.000|
+ST_CLK      |    9.816(R)|LClk_BUFGP        |   0.000|
+------------+------------+------------------+--------+
+
+Clock LWR to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  |  Clock |
+Destination | to PAD     |Internal Clock(s) |  Phase |
+------------+------------+------------------+--------+
+SP_BRK      |   10.011(R)|LWR1              |   0.000|
+SP_DIR      |    9.996(R)|LWR1              |   0.000|
+SP_DIS      |    9.806(R)|LWR1              |   0.000|
+ST_DIR      |    9.963(R)|LWR1              |   0.000|
+ST_DIS      |   10.107(R)|LWR1              |   0.000|
+ST_ENB      |   10.101(R)|LWR1              |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock LClk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+LClk           |    9.804|         |         |         |
+LWR            |    7.241|    6.381|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock LWR
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+LClk           |    9.159|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Analysis completed Thu Mar 15 10:16:06 2012
+--------------------------------------------------------------------------------
+
+Peak Memory Usage: 51 MB

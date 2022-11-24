@@ -1,0 +1,1610 @@
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Programming File Generation Report
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Programming File Generation Report
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# View RTL Schematic
+CNC.ngr
+# View RTL Schematic
+CNC.ngr
+# View RTL Schematic
+CNC.ngr
+# Schematic : PDCL (jhdparse)
+__projnav/aa_jhdparse_tcl.rsp
+# Schematic : View Verilog Functional Model
+aa.vf
+# XST (Creating Lso File) : 
+aa.lso
+# xst flow : RunXST
+aa.syr
+aa.prj
+aa.sprj
+aa.ana
+aa.stx
+aa.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# View RTL Schematic
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# Generate PROM, ACE, or JTAG File
+CNC.ace
+xilinx.sys
+CNC.mpm
+CNC.mcs
+CNC.prm
+CNC.dst
+CNC.exo
+CNC.tek
+CNC.hex
+CNC.svf
+CNC.stapl
+impact.cmd
+_impact.log
+_impact.cmd
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log
+# Generate PROM, ACE, or JTAG File
+CNC.ace
+xilinx.sys
+CNC.mpm
+CNC.mcs
+CNC.prm
+CNC.dst
+CNC.exo
+CNC.tek
+CNC.hex
+CNC.svf
+CNC.stapl
+impact.cmd
+_impact.log
+_impact.cmd
+# XST (Creating Lso File) : 
+CNC.lso
+# xst flow : RunXST
+CNC.syr
+CNC.prj
+CNC.sprj
+CNC.ana
+CNC.stx
+CNC.cmd_log
+CNC.ngc
+CNC.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo
+CNC.ngd
+CNC_ngdbuild.nav
+CNC.bld
+CNCpins.ucf.untf
+CNC.cmd_log
+# Implementation : Map
+CNC_map.ncd
+CNC.ngm
+CNC.pcf
+CNC.nc1
+CNC.mrp
+CNC_map.mrp
+CNC.mdf
+__projnav/map.log
+CNC.cmd_log
+MAP_NO_GUIDE_FILE_CPF "CNC"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+CNC.twr
+CNC.twx
+CNC.tsi
+CNC.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+CNC.ncd
+CNC.par
+CNC.pad
+CNC_pad.txt
+CNC_pad.csv
+CNC.pad_txt
+CNC.dly
+reportgen.log
+CNC.xpi
+CNC.grf
+CNC.itr
+CNC_last_par.ncd
+__projnav/par.log
+CNC.placed_ncd_tracker
+CNC.routed_ncd_tracker
+CNC.cmd_log
+PAR_NO_GUIDE_FILE_CPF "CNC"
+# Generate Programming File
+__projnav/CNC_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+CNC.ut
+# Generate Programming File
+CNC.bgn
+CNC.rbt
+CNC.ll
+CNC.msk
+CNC.drc
+CNC.nky
+CNC.bit
+CNC.bin
+CNC.isc
+CNC.cmd_log

@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator G.23
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o f:\pcicard\my5i20\iopr24v//top -u 0 F:\PCICard\My5i20\IOPR24V\iopr24.bit -x xc17v01 
+
+PROM f:\pcicard\my5i20\iopr24v//top.prm map: Fri May 10 17:27:36 2013
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          205K
+PROM start    0000:0000
+PROM end      0003:33ff
+PROM checksum 01575826
+
+        Addr1        Addr2 File(s)
+    0000:0000    0002:8c43 F:/PCICard/My5i20/IOPR24V/iopr24.bit

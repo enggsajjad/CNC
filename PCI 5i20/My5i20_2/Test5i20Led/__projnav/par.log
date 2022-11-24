@@ -1,0 +1,3 @@
+Place & Route Module leds . . .
+PAR command line: par -w -intstyle ise -ol std -t 1 leds_map.ncd leds.ncd leds.pcf
+PAR completed successfully

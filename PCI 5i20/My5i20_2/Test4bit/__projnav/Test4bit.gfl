@@ -1,0 +1,73 @@
+# XST (Creating Lso File) : 
+test.lso
+# xst flow : RunXST
+test.syr
+test.prj
+test.sprj
+test.ana
+test.stx
+test.cmd_log
+test.ngc
+test.ngr
+# Implmentation : Translate
+__projnav/ngdbuild.err
+__projnav/ednTOngd_tcl.rsp
+f:\my5i20\test4bit/_ngo
+test.ngd
+test_ngdbuild.nav
+test.bld
+CNCpins.ucf.untf
+test.cmd_log
+# Implementation : Map
+test_map.ncd
+test.ngm
+test.pcf
+test.nc1
+test.mrp
+test_map.mrp
+test.mdf
+__projnav/map.log
+test.cmd_log
+MAP_NO_GUIDE_FILE_CPF "test"
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+__projnav/posttrc.log
+test.twr
+test.twx
+test.tsi
+test.cmd_log
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+test.ncd
+test.par
+test.pad
+test_pad.txt
+test_pad.csv
+test.pad_txt
+test.dly
+reportgen.log
+test.xpi
+test.grf
+test.itr
+test_last_par.ncd
+__projnav/par.log
+test.placed_ncd_tracker
+test.routed_ncd_tracker
+test.cmd_log
+PAR_NO_GUIDE_FILE_CPF "test"
+# Generate Programming File
+__projnav/test_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+test.ut
+# Generate Programming File
+test.bgn
+test.rbt
+test.ll
+test.msk
+test.drc
+test.nky
+test.bit
+test.bin
+test.isc
+test.cmd_log

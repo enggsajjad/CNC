@@ -1,0 +1,416 @@
+Release 6.1i - xst G.23
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.17 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.17 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: CNC.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : CNC.prj
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+Verilog Include Directory          : 
+
+---- Target Parameters
+Output File Name                   : CNC
+Output Format                      : NGC
+Target Device                      : xc2s200-6-pq208
+
+---- Source Options
+Top Module Name                    : CNC
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : lut
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100
+Add Generic Clock Buffer(BUFG)     : 4
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : CNC.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+Optimize Instantiated Primitives   : NO
+
+=========================================================================
+
+WARNING:Xst:1885 - LSO file is empty, default list of libraries is used
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling source file "CNC14032012.v"
+Module <CNC> compiled
+No errors in compilation
+Analysis of file <CNC.prj> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <CNC>.
+WARNING:Xst:905 - CNC14032012.v line 87: The signals <D> are missing in the sensitivity list of always block.
+WARNING:Xst:905 - CNC14032012.v line 118: The signals <D> are missing in the sensitivity list of always block.
+WARNING:Xst:905 - CNC14032012.v line 129: The signals <D> are missing in the sensitivity list of always block.
+WARNING:Xst:905 - CNC14032012.v line 140: The signals <D> are missing in the sensitivity list of always block.
+WARNING:Xst:905 - CNC14032012.v line 152: The signals <D> are missing in the sensitivity list of always block.
+WARNING:Xst:905 - CNC14032012.v line 163: The signals <D> are missing in the sensitivity list of always block.
+WARNING:Xst:905 - CNC14032012.v line 174: The signals <D> are missing in the sensitivity list of always block.
+Module <CNC> is correct for synthesis.
+ 
+Analyzing module <IBUF>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <CNC>.
+    Related source file is CNC14032012.v.
+WARNING:Xst:646 - Signal <A<31:5>> is assigned but never used.
+WARNING:Xst:646 - Signal <A<1:0>> is assigned but never used.
+WARNING:Xst:737 - Found 32-bit latch for signal <cnt_val>.
+WARNING:Xst:737 - Found 1-bit latch for signal <ST_ENB>.
+WARNING:Xst:737 - Found 1-bit latch for signal <ST_DIS>.
+WARNING:Xst:737 - Found 1-bit latch for signal <ST_DIR>.
+WARNING:Xst:737 - Found 1-bit latch for signal <SP_BRK>.
+WARNING:Xst:737 - Found 1-bit latch for signal <SP_DIS>.
+WARNING:Xst:737 - Found 1-bit latch for signal <SP_DIR>.
+    Found 1-bit register for signal <ST_CLK>.
+    Found 32-bit comparator equal for signal <$n0001> created at line 76.
+    Found 32-bit subtractor for signal <$n0004> created at line 91.
+    Found 32-bit register for signal <A>.
+    Found 32-bit up counter for signal <cnt>.
+    Found 32-bit register for signal <D>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  65 D-type flip-flop(s).
+	inferred   1 Adder/Subtracter(s).
+	inferred   1 Comparator(s).
+Unit <CNC> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 3
+  32-bit register                  : 2
+  1-bit register                   : 1
+# Latches                          : 7
+  32-bit latch                     : 1
+  1-bit latch                      : 6
+# Counters                         : 1
+  32-bit up counter                : 1
+# Adders/Subtractors               : 1
+  32-bit subtractor                : 1
+# Comparators                      : 1
+  32-bit comparator equal          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1291 - FF/Latch <A_31> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_0> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_1> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_5> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_6> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_7> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_8> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_9> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_10> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_11> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_12> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_13> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_14> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_15> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_16> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_17> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_18> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_19> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_20> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_21> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_22> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_23> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_24> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_25> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_26> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_27> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_28> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_29> is unconnected in block <CNC>.
+WARNING:Xst:1291 - FF/Latch <A_30> is unconnected in block <CNC>.
+
+Optimizing unit <CNC> ...
+Loading device for application Xst from file 'v200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CNC, actual ratio is 2.
+Latch ST_DIS has been replicated 1 time(s) to handle iob=true attribute.
+Latch ST_ENB has been replicated 1 time(s) to handle iob=true attribute.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CNC.ngr
+Top Level Output File Name         : CNC
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 50
+
+Macro Statistics :
+# Registers                        : 4
+#      1-bit register              : 1
+#      32-bit register             : 3
+# Adders/Subtractors               : 2
+#      32-bit adder                : 1
+#      32-bit subtractor           : 1
+# Comparators                      : 1
+#      32-bit comparator equal     : 1
+
+Cell Usage :
+# BELS                             : 245
+#      GND                         : 1
+#      LUT1                        : 75
+#      LUT2                        : 1
+#      LUT3                        : 9
+#      LUT3_D                      : 1
+#      LUT4_L                      : 16
+#      MUXCY                       : 78
+#      VCC                         : 1
+#      XORCY                       : 63
+# FlipFlops/Latches                : 108
+#      FDE                         : 35
+#      FDR                         : 32
+#      FDRE                        : 1
+#      LDE                         : 32
+#      LDE_1                       : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 49
+#      IBUF                        : 34
+#      OBUF                        : 15
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2s200pq208-6 
+
+ Number of Slices:                      87  out of   2352     3%  
+ Number of Slice Flip Flops:           108  out of   4704     2%  
+ Number of 4 input LUTs:               102  out of   4704     2%  
+ Number of bonded IOBs:                 49  out of    144    34%  
+ Number of GCLKs:                        1  out of      4    25%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+LClk                               | BUFGP                  | 68    |
+LWR                                | IBUF                   | 8     |
+_n00031_1(_n00031_1:O)             | NONE(*)(cnt_val_3)     | 32    |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Timing Summary:
+---------------
+Speed Grade: -6
+
+   Minimum period: 9.264ns (Maximum Frequency: 107.945MHz)
+   Minimum input arrival time before clock: 9.141ns
+   Maximum output required time after clock: 9.317ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'LClk'
+Delay:               9.264ns (Levels of Logic = 18)
+  Source:            cnt_0 (FF)
+  Destination:       cnt_30 (FF)
+  Source Clock:      LClk rising
+  Destination Clock: LClk rising
+
+  Data Path: cnt_0 to cnt_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   1.085   1.206  cnt_0 (cnt_0)
+     LUT4_L:I0->LO         1   0.549   0.000  Mcompar__n0001_inst_lut4_01 (Mcompar__n0001_inst_lut4_0)
+     MUXCY:S->O            1   0.659   0.000  Mcompar__n0001_inst_cy_32 (Mcompar__n0001_inst_cy_32)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_33 (Mcompar__n0001_inst_cy_33)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_34 (Mcompar__n0001_inst_cy_34)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_35 (Mcompar__n0001_inst_cy_35)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_36 (Mcompar__n0001_inst_cy_36)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_37 (Mcompar__n0001_inst_cy_37)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_38 (Mcompar__n0001_inst_cy_38)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_39 (Mcompar__n0001_inst_cy_39)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_40 (Mcompar__n0001_inst_cy_40)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_41 (Mcompar__n0001_inst_cy_41)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_42 (Mcompar__n0001_inst_cy_42)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_43 (Mcompar__n0001_inst_cy_43)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_44 (Mcompar__n0001_inst_cy_44)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_45 (Mcompar__n0001_inst_cy_45)
+     MUXCY:CI->O           1   0.042   0.000  Mcompar__n0001_inst_cy_46 (Mcompar__n0001_inst_cy_46)
+     MUXCY:CI->O           3   0.042   1.332  Mcompar__n0001_inst_cy_47 (_n0001)
+     LUT3:I2->O           16   0.549   2.520  _n00051 (_n0005)
+     FDR:R                     0.734          cnt_0
+    ----------------------------------------
+    Total                      9.264ns (4.206ns logic, 5.058ns route)
+                                       (45.4% logic, 54.6% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'LClk'
+Offset:              9.141ns (Levels of Logic = 2)
+  Source:            LWR (PAD)
+  Destination:       D_31 (FF)
+  Destination Clock: LClk rising
+
+  Data Path: LWR to D_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   0.776   2.070  i1 (LWR1)
+     LUT1:I0->O           64   0.549   4.860  cnt_val_0__n00011 (cnt_val_0__n0001)
+     FDE:CE                    0.886          D_0
+    ----------------------------------------
+    Total                      9.141ns (2.211ns logic, 6.930ns route)
+                                       (24.2% logic, 75.8% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n00031_1:O'
+Offset:              9.141ns (Levels of Logic = 2)
+  Source:            LWR (PAD)
+  Destination:       cnt_val_31 (LATCH)
+  Destination Clock: _n00031_1:O falling
+
+  Data Path: LWR to cnt_val_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   0.776   2.070  i1 (LWR1)
+     LUT1:I0->O           64   0.549   4.860  cnt_val_0__n00011 (cnt_val_0__n0001)
+     LDE:GE                    0.886          cnt_val_0
+    ----------------------------------------
+    Total                      9.141ns (2.211ns logic, 6.930ns route)
+                                       (24.2% logic, 75.8% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LClk'
+Offset:              9.317ns (Levels of Logic = 2)
+  Source:            D_0 (FF)
+  Destination:       LEDS<3> (PAD)
+  Source Clock:      LClk rising
+
+  Data Path: D_0 to LEDS<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             10   1.085   1.980  D_0 (D_0)
+     LUT1:I0->O            1   0.549   1.035  LEDS<3>1 (LEDS_3_OBUF)
+     OBUF:I->O                 4.668          LEDS_3_OBUF (LEDS<3>)
+    ----------------------------------------
+    Total                      9.317ns (6.302ns logic, 3.015ns route)
+                                       (67.6% logic, 32.4% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LWR'
+Offset:              6.897ns (Levels of Logic = 1)
+  Source:            SP_BRK (LATCH)
+  Destination:       SP_BRK (PAD)
+  Source Clock:      LWR rising
+
+  Data Path: SP_BRK to SP_BRK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            1   1.194   1.035  SP_BRK (SP_BRK_OBUF)
+     OBUF:I->O                 4.668          SP_BRK_OBUF (SP_BRK)
+    ----------------------------------------
+    Total                      6.897ns (5.862ns logic, 1.035ns route)
+                                       (85.0% logic, 15.0% route)
+
+=========================================================================
+CPU : 1.75 / 2.11 s | Elapsed : 1.00 / 2.00 s
+ 
+--> 
+
+Total memory usage is 60348 kilobytes
+
+

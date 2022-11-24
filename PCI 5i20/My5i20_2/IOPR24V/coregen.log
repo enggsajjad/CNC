@@ -1,0 +1,21 @@
+# Xilinx CORE Generator 6.1i
+# User = Sajjad
+Initializing default project...
+Loading plug-ins...
+All runtime messages will be recorded in F:\PCICard\My5i20\IOPR24V\coregen.log
+# busformat=BusFormatAngleBracketNotRipped
+# designflow=VHDL
+# expandedprojectpath=F:\PCICard\My5i20\IOPR24V
+# flowvendor=Foundation_iSE
+# formalverification=None
+# simulationoutputproducts=VHDL
+# xilinxfamily=Virtex2
+# outputoption=DesignFlow
+# overwritefiles=Default
+# simvendor=ModelSim
+# expandedprojectpath=F:\PCICard\My5i20\IOPR24V
+SETPROJECT .
+Set current Project to F:\PCICard\My5i20\IOPR24V
+SET BusFormat = BusFormatAngleBracketNotRipped
+SETXIPCPORTHOST 1083
+XIPCPJSENDCORES spartan2

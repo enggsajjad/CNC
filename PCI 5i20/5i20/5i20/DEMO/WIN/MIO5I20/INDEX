@@ -1,0 +1,8 @@
+
+Directory contents:
+
+mio5i20w.c        5I20 PCI memory access demo. program source.
+Other mio5i20w.*  Visual C++ 6.0 droppings.
+Debug/*           Visual C++ 6.0 debug droppings.
+Release/*         Visual C++ 6.0 non-debug droppings.
+

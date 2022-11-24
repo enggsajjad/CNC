@@ -1,0 +1,9 @@
+// Verilog model created from aa.sch - Wed Mar 14 17:23:25 2012
+
+`timescale 1ns / 1ps
+
+module aa();
+
+   
+   
+endmodule

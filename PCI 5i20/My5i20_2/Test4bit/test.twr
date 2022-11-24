@@ -1,0 +1,60 @@
+--------------------------------------------------------------------------------
+Release 6.1i Trace G.23
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+C:/Xilinx/bin/nt/trce.exe -intstyle ise -e 3 -l 3 -xml test test.ncd -o
+test.twr test.pcf
+
+
+Design file:              test.ncd
+Physical constraint file: test.pcf
+Device,speed:             xc2s200,-6 (PRODUCTION 1.27 2003-06-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock LClk
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  |  Clock |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) |  Phase |
+------------+------------+------------+------------------+--------+
+ADS         |    4.657(R)|   -3.458(R)|LClk_BUFGP        |   0.000|
+LAD<0>      |    3.726(R)|   -2.505(R)|LClk_BUFGP        |   0.000|
+LAD<1>      |    2.822(R)|   -1.331(R)|LClk_BUFGP        |   0.000|
+LAD<2>      |    2.660(R)|   -1.305(R)|LClk_BUFGP        |   0.000|
+LAD<3>      |    3.124(R)|   -2.215(R)|LClk_BUFGP        |   0.000|
+LWR         |    2.652(R)|   -1.705(R)|LClk_BUFGP        |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock LClk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  |  Clock |
+Destination | to PAD     |Internal Clock(s) |  Phase |
+------------+------------+------------------+--------+
+LEDS<0>     |    6.410(R)|LClk_BUFGP        |   0.000|
+LEDS<1>     |    6.410(R)|LClk_BUFGP        |   0.000|
+LEDS<2>     |    6.410(R)|LClk_BUFGP        |   0.000|
+LEDS<3>     |    6.418(R)|LClk_BUFGP        |   0.000|
+LEDS<4>     |    6.410(R)|LClk_BUFGP        |   0.000|
+LEDS<5>     |    6.410(R)|LClk_BUFGP        |   0.000|
+LEDS<6>     |    6.410(R)|LClk_BUFGP        |   0.000|
+LEDS<7>     |    6.418(R)|LClk_BUFGP        |   0.000|
+------------+------------+------------------+--------+
+
+Analysis completed Tue Mar 13 11:22:42 2012
+--------------------------------------------------------------------------------
+
+Peak Memory Usage: 48 MB

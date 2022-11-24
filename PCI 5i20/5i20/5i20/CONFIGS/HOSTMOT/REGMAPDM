@@ -1,0 +1,192 @@
+12 channel HOSTMOT config register map:
+
+32 bit base offsets:
+
+Counter0	0x00
+Counter1	0x04
+Counter2	0x08
+Counter3	0x0C
+Counter4	0x10
+Counter5	0x14
+Counter6	0x18
+Counter7	0x1C
+Counter8	0x20
+Counter9	0x24
+Counter10	0x28
+Counter11	0x2C
+
+(0x30 .. 0x3F unused)
+
+32 bit position counters
+
+16 bit base offsets:
+
+CCR0		0x40
+CCR1		0x42
+CCR2		0x44
+CCR3		0x46
+CCR4		0x48
+CCR5		0x4A
+CCR6		0x4C
+CCR7		0x4E
+CCR8		0x50 (12 channel only)
+CCR9		0x52 (12 channel only)
+CCR10		0x54 (12 channel only)
+CCR11		0x56 (12 channel only)
+
+CCR (Counter Control Register) Bit definitions:
+
+BIT9	CounterMode	0 = quadrature		1 = up/down
+BIT8	InputFilter	0 = No filter		1 = ~2 MHz input filter
+BIT7	Inbit
+BIT6	LCountenable	0 = count disabled	1 = counting enabled
+BIT5	ClearOnIndex	0 = no COI		1 = clear counter on index
+BIT4	Latchedindex	0 = no index		1 = index detected
+BIT3	IndexPolarity	0 = index active low	1 = index active high
+BIT2	Index		Real time index status (reads) counter clear (writes)
+BIT1	B		Real time input A status (read only)	
+BIT0	A		Read time input B status (read only)
+
+(0x58 .. 0x5F unused)
+
+PWMVAL0		0x60
+PWMVAL1		0x62
+PWMVAL2		0x64
+PWMVAL3		0x66
+PWMVAL4		0x68
+PWMVAL5		0x6A
+PWMVAL6		0x6C
+PWMVAL7		0x6E
+PWMVAL8		0x70 (12 channel only)
+PWMVAL9		0x72 (12 channel only)
+PWMVAL10	0x74 (12 channel only)
+PWMVAL11	0x76 (12 channel only)
+
+(0x78 .. 0x7F unused)
+
+PWMVAL is an unsigned 16 bit number which is output as 10 bit PWM 
+
+PCR0		0x80
+PCR1		0x82
+PCR2		0x84
+PCR3		0x86
+PCR4		0x88
+PCR5		0x8A
+PCR6		0x8C
+PCR7		0x8E
+PCR8		0x90
+PCR9		0x92
+PCR10		0x94
+PCR11		0x96
+ 					
+(0x98 .. 0x9F unused)
+
+PCR bit Definitions:
+
+BIT2		Realtime PWM output bit status (read only)	
+BIT1		Interlace enable (interlaces PWM output for use as analog out)
+BIT0 		Enable -- enables PWM and ENA bit if set
+
+
+ThreePhaseRates:
+RATE0		0xA0
+RATE1		0xA2
+RATE2		0xA4
+RATE3		0xA6
+RATE4		0xA8
+RATE5		0xAA
+RATE6		0xAC
+RATE7		0xAE
+RATE8		0xB0
+RATE9		0xB2
+RATE10		0xB4
+RATE11		0xB6
+
+Threephase rate is a 16 bit register per channel that sets the
+three phase output rate to 33 Mhz/8192*RATE/65536
+
+ThreePhaseCRs:
+TPCR0		0xC0
+TPCR1		0xC2
+TPCR2		0xC4
+TPCR3		0xC6
+TPCR4		0xC8
+TPCR5		0xCA
+TPCR6		0xCC
+TPCR7		0xCE
+TPCR8		0xD0
+TPCR9		0xD2
+TPCR10		0xD4
+TPCR11		0xD6
+
+TPCR bit definitions:
+BIT1		Three phase output drive enable: 
+		(A,B,IDX are counter inputs if '0', 
+		A,B,C outputs if '1')		
+BIT0		Threephase state counter reset:
+		three phase generator is held at 101 (ABC)
+		state if '0', and allowed to run are ThreePhaseRate
+		if '1';
+
+
+I/O port:
+
+PORTA		0xE0	24 bit I/O port
+PORTADDR	0xE4	24 I/O port Data direction register - 1 = out 
+
+
+GContReg	0xF0
+
+GContReg bit definitions:
+
+BIT3		0 = NOP		1 = Clear IRQ
+BIT2		0 = NOP		1 = Clear all PWMs
+BIT1		0 = NOP		1 = Latch all counters
+BIT0		0 = NOP		1 = Clear all counters
+ 
+Note GContReg is write only and "transient" you only need to write once to
+accomplish the desired action, no need to clear the bit later...
+
+GModeReg	0xF2
+
+GMode register bit definitions:
+
+BIT6	IRQstatus	Real time IRQ status
+BIT5	IRQMask		IRQ mask bit
+BIT4	MissedIRQ	Missed interrupt status
+BIT3	SOM		Stop on Missed interrupt control bit
+BIT2	LOI		Latch on interrupt control bit
+BIT1	PWMEN		Global PWM enable
+BIT0	CTREN		Global counter enable
+
+IRQDivSel	0xF4
+
+8 bit programmable divider for IRQ rate = PWM rate/(IRQDivSel+1)
+
+RATE register	0xF6
+16 bit rate register: multiplies PWM reference counter input rate by
+RATE/65536 so final PWM rate = 33MHz/1024 * RATE/65536 
+
+LEDView		0xF8
+
+LED view register determines what channel the on card LEDS monitor.
+LEDs monitor the following signals of the selected channel:
+
+CR1	IRQLatch
+CR2	QuadA
+CR3	QuadB
+CR4	IDX
+CR5	DIR
+CR6	PWM
+CR7	ENA
+CR8	OUTBIT
+
+REFREQ counter	0xFC -- 32 bit
+
+Reads Local bus clock for timing calibration.
+Writes start a 100 mS gated frequency counter of the 33 MHz LCLK
+Gate status is MSB (bit 31) of REFREQ register.
+When gate becomes 0 after writing to REFREQ, frequency can be 
+read from REFFREQ = LCLK/10 Hz.
+ 
+

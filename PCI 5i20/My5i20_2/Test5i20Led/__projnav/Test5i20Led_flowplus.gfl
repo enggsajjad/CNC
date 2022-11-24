@@ -1,0 +1,32 @@
+# XST flow : Creating project file
+leds.prj
+# xst flow : RunXST
+leds.prj
+__projnav/leds.xst
+./xst
+# xst flow : RunXST
+leds.prj
+__projnav/leds.xst
+./xst
+# XST flow : Creating project file
+leds.prj
+# xst flow : RunXST
+leds.prj
+__projnav/leds.xst
+./xst
+# xst flow : RunXST
+leds.prj
+__projnav/leds.xst
+./xst
+# XST flow : Creating project file
+leds.prj
+# xst flow : RunXST
+leds.prj
+__projnav/leds.xst
+./xst
+# XST flow : Creating project file
+leds.prj
+# xst flow : RunXST
+leds.prj
+__projnav/leds.xst
+./xst

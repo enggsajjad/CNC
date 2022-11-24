@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn __projnav/WORD24RB.xst -ofn WORD24RB.syr

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn __projnav/aa.xst -ofn aa.syr

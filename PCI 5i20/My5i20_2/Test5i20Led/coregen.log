@@ -1,0 +1,21 @@
+# Xilinx CORE Generator 6.1i
+# User = Sajjad
+Initializing default project...
+Loading plug-ins...
+All runtime messages will be recorded in F:\Test5i20Led\coregen.log
+# busformat=BusFormatAngleBracketNotRipped
+# designflow=VHDL
+# expandedprojectpath=F:\Test5i20Led
+# flowvendor=Foundation_iSE
+# formalverification=None
+# simulationoutputproducts=VHDL
+# xilinxfamily=Virtex2
+# outputoption=DesignFlow
+# overwritefiles=Default
+# simvendor=ModelSim
+# expandedprojectpath=F:\Test5i20Led
+SETPROJECT .
+Set current Project to F:\Test5i20Led
+SET BusFormat = BusFormatAngleBracketNotRipped
+SETXIPCPORTHOST 1038
+XIPCPJSENDCORES spartan2

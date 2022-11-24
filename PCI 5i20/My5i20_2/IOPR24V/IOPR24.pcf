@@ -1,0 +1,184 @@
+SCHEMATIC START ;
+// created by map version G.23 on Fri May 10 17:27:07 2013 
+COMP "LEDS<0>" LOCATE =  SITE "P10" LEVEL 1; 
+COMP "LEDS<1>" LOCATE =  SITE "P14" LEVEL 1; 
+COMP "LEDS<2>" LOCATE =  SITE "P15" LEVEL 1; 
+COMP "LEDS<3>" LOCATE =  SITE "P16" LEVEL 1; 
+COMP "LEDS<4>" LOCATE =  SITE "P17" LEVEL 1; 
+COMP "LEDS<5>" LOCATE =  SITE "P18" LEVEL 1; 
+COMP "LEDS<6>" LOCATE =  SITE "P20" LEVEL 1; 
+COMP "SYNCLK" LOCATE =  SITE "P185" LEVEL 1; 
+COMP "LEDS<7>" LOCATE =  SITE "P21" LEVEL 1; 
+COMP "LClk" LOCATE =  SITE "P182" LEVEL 1; 
+COMP "IOBits<0>" LOCATE =  SITE "P96" LEVEL 1; 
+COMP "IOBits<1>" LOCATE =  SITE "P94" LEVEL 1; 
+COMP "IOBits<2>" LOCATE =  SITE "P89" LEVEL 1; 
+COMP "IOBits<3>" LOCATE =  SITE "P87" LEVEL 1; 
+COMP "IOBits<4>" LOCATE =  SITE "P84" LEVEL 1; 
+COMP "IOBits<5>" LOCATE =  SITE "P82" LEVEL 1; 
+COMP "LW_R" LOCATE =  SITE "P101" LEVEL 1; 
+COMP "IOBits<6>" LOCATE =  SITE "P75" LEVEL 1; 
+COMP "IOBits<7>" LOCATE =  SITE "P73" LEVEL 1; 
+COMP "IOBits<8>" LOCATE =  SITE "P70" LEVEL 1; 
+COMP "IOBits<9>" LOCATE =  SITE "P68" LEVEL 1; 
+COMP "LAD<0>" LOCATE =  SITE "P153" LEVEL 1; 
+COMP "LAD<1>" LOCATE =  SITE "P146" LEVEL 1; 
+COMP "LAD<2>" LOCATE =  SITE "P142" LEVEL 1; 
+COMP "LAD<3>" LOCATE =  SITE "P135" LEVEL 1; 
+COMP "LAD<4>" LOCATE =  SITE "P126" LEVEL 1; 
+COMP "LAD<5>" LOCATE =  SITE "P119" LEVEL 1; 
+COMP "LAD<6>" LOCATE =  SITE "P115" LEVEL 1; 
+COMP "LAD<7>" LOCATE =  SITE "P108" LEVEL 1; 
+COMP "LAD<8>" LOCATE =  SITE "P174" LEVEL 1; 
+COMP "LAD<9>" LOCATE =  SITE "P173" LEVEL 1; 
+COMP "IOBits<10>" LOCATE =  SITE "P63" LEVEL 1; 
+COMP "IOBits<11>" LOCATE =  SITE "P61" LEVEL 1; 
+COMP "IOBits<20>" LOCATE =  SITE "P33" LEVEL 1; 
+COMP "IOBits<12>" LOCATE =  SITE "P59" LEVEL 1; 
+COMP "IOBits<13>" LOCATE =  SITE "P57" LEVEL 1; 
+COMP "IOBits<21>" LOCATE =  SITE "P30" LEVEL 1; 
+COMP "IOBits<14>" LOCATE =  SITE "P48" LEVEL 1; 
+COMP "IOBits<30>" LOCATE =  SITE "P74" LEVEL 1; 
+COMP "IOBits<22>" LOCATE =  SITE "P27" LEVEL 1; 
+COMP "IOBits<15>" LOCATE =  SITE "P46" LEVEL 1; 
+COMP "IOBits<31>" LOCATE =  SITE "P71" LEVEL 1; 
+COMP "IOBits<23>" LOCATE =  SITE "P23" LEVEL 1; 
+COMP "IOBits<40>" LOCATE =  SITE "P43" LEVEL 1; 
+COMP "IOBits<32>" LOCATE =  SITE "P69" LEVEL 1; 
+COMP "IOBits<24>" LOCATE =  SITE "P95" LEVEL 1; 
+COMP "IOBits<16>" LOCATE =  SITE "P44" LEVEL 1; 
+COMP "IOBits<41>" LOCATE =  SITE "P41" LEVEL 1; 
+COMP "IOBits<33>" LOCATE =  SITE "P67" LEVEL 1; 
+COMP "IOBits<25>" LOCATE =  SITE "P90" LEVEL 1; 
+COMP "IOBits<17>" LOCATE =  SITE "P42" LEVEL 1; 
+COMP "IOBits<50>" LOCATE =  SITE "P188" LEVEL 1; 
+COMP "IOBits<42>" LOCATE =  SITE "P36" LEVEL 1; 
+COMP "IOBits<34>" LOCATE =  SITE "P62" LEVEL 1; 
+COMP "IOBits<26>" LOCATE =  SITE "P88" LEVEL 1; 
+COMP "IOBits<18>" LOCATE =  SITE "P37" LEVEL 1; 
+COMP "IOBits<51>" LOCATE =  SITE "P189" LEVEL 1; 
+COMP "IOBits<43>" LOCATE =  SITE "P34" LEVEL 1; 
+COMP "IOBits<35>" LOCATE =  SITE "P60" LEVEL 1; 
+COMP "IOBits<27>" LOCATE =  SITE "P86" LEVEL 1; 
+COMP "IOBits<19>" LOCATE =  SITE "P35" LEVEL 1; 
+COMP "IOBits<60>" LOCATE =  SITE "P202" LEVEL 1; 
+COMP "IOBits<52>" LOCATE =  SITE "P191" LEVEL 1; 
+COMP "IOBits<44>" LOCATE =  SITE "P31" LEVEL 1; 
+COMP "IOBits<36>" LOCATE =  SITE "P58" LEVEL 1; 
+COMP "IOBits<28>" LOCATE =  SITE "P83" LEVEL 1; 
+COMP "IOBits<61>" LOCATE =  SITE "P203" LEVEL 1; 
+COMP "IOBits<53>" LOCATE =  SITE "P192" LEVEL 1; 
+COMP "IOBits<45>" LOCATE =  SITE "P29" LEVEL 1; 
+COMP "IOBits<37>" LOCATE =  SITE "P49" LEVEL 1; 
+COMP "IOBits<29>" LOCATE =  SITE "P81" LEVEL 1; 
+COMP "IOBits<70>" LOCATE =  SITE "P8" LEVEL 1; 
+COMP "IOBits<62>" LOCATE =  SITE "P204" LEVEL 1; 
+COMP "IOBits<54>" LOCATE =  SITE "P193" LEVEL 1; 
+COMP "IOBits<46>" LOCATE =  SITE "P24" LEVEL 1; 
+COMP "IOBits<38>" LOCATE =  SITE "P47" LEVEL 1; 
+COMP "IOBits<71>" LOCATE =  SITE "P9" LEVEL 1; 
+COMP "IOBits<63>" LOCATE =  SITE "P205" LEVEL 1; 
+COMP "IOBits<55>" LOCATE =  SITE "P194" LEVEL 1; 
+COMP "IOBits<47>" LOCATE =  SITE "P22" LEVEL 1; 
+COMP "IOBits<39>" LOCATE =  SITE "P45" LEVEL 1; 
+COMP "ADS" LOCATE =  SITE "P98" LEVEL 1; 
+COMP "IOBits<64>" LOCATE =  SITE "P206" LEVEL 1; 
+COMP "IOBits<56>" LOCATE =  SITE "P195" LEVEL 1; 
+COMP "IOBits<48>" LOCATE =  SITE "P181" LEVEL 1; 
+COMP "IOBits<65>" LOCATE =  SITE "P3" LEVEL 1; 
+COMP "IOBits<57>" LOCATE =  SITE "P199" LEVEL 1; 
+COMP "IOBits<49>" LOCATE =  SITE "P187" LEVEL 1; 
+COMP "IOBits<66>" LOCATE =  SITE "P4" LEVEL 1; 
+COMP "IOBits<58>" LOCATE =  SITE "P200" LEVEL 1; 
+COMP "IOBits<67>" LOCATE =  SITE "P5" LEVEL 1; 
+COMP "IOBits<59>" LOCATE =  SITE "P201" LEVEL 1; 
+COMP "IOBits<68>" LOCATE =  SITE "P6" LEVEL 1; 
+COMP "IOBits<69>" LOCATE =  SITE "P7" LEVEL 1; 
+COMP "LRD" LOCATE =  SITE "P100" LEVEL 1; 
+COMP "LWR" LOCATE =  SITE "P160" LEVEL 1; 
+COMP "LAD<10>" LOCATE =  SITE "P172" LEVEL 1; 
+COMP "LAD<11>" LOCATE =  SITE "P168" LEVEL 1; 
+COMP "LAD<20>" LOCATE =  SITE "P150" LEVEL 1; 
+COMP "LAD<12>" LOCATE =  SITE "P167" LEVEL 1; 
+COMP "LAD<21>" LOCATE =  SITE "P149" LEVEL 1; 
+COMP "LAD<13>" LOCATE =  SITE "P166" LEVEL 1; 
+COMP "LAD<30>" LOCATE =  SITE "P133" LEVEL 1; 
+COMP "LAD<22>" LOCATE =  SITE "P148" LEVEL 1; 
+COMP "LAD<14>" LOCATE =  SITE "P165" LEVEL 1; 
+COMP "LAD<31>" LOCATE =  SITE "P132" LEVEL 1; 
+COMP "LAD<23>" LOCATE =  SITE "P147" LEVEL 1; 
+COMP "LAD<15>" LOCATE =  SITE "P164" LEVEL 1; 
+COMP "LAD<24>" LOCATE =  SITE "P141" LEVEL 1; 
+COMP "LAD<16>" LOCATE =  SITE "P163" LEVEL 1; 
+COMP "LAD<25>" LOCATE =  SITE "P140" LEVEL 1; 
+COMP "LAD<17>" LOCATE =  SITE "P162" LEVEL 1; 
+COMP "LAD<26>" LOCATE =  SITE "P139" LEVEL 1; 
+COMP "LAD<18>" LOCATE =  SITE "P152" LEVEL 1; 
+COMP "LAD<27>" LOCATE =  SITE "P138" LEVEL 1; 
+COMP "LAD<19>" LOCATE =  SITE "P151" LEVEL 1; 
+COMP "LAD<28>" LOCATE =  SITE "P136" LEVEL 1; 
+COMP "LAD<29>" LOCATE =  SITE "P134" LEVEL 1; 
+TIMEGRP "LClk" = BEL "oportx0_outreg_22" BEL "oportx1_outreg_22" BEL 
+"oportx2_outreg_22" BEL "PreFastRead" BEL "A_2" BEL "A_3" BEL "A_4" BEL 
+"oportx2_ddrreg_23" BEL "oportx2_outreg_23" BEL "oportx2_ddrreg_0" BEL 
+"oportx2_ddrreg_1" BEL "oportx2_ddrreg_2" BEL "oportx2_ddrreg_3" BEL 
+"oportx2_ddrreg_4" BEL "oportx2_ddrreg_5" BEL "oportx2_ddrreg_6" BEL 
+"oportx2_ddrreg_7" BEL "oportx2_ddrreg_8" BEL "oportx2_ddrreg_9" BEL 
+"oportx2_ddrreg_10" BEL "oportx2_ddrreg_11" BEL "oportx2_ddrreg_12" BEL 
+"oportx2_ddrreg_13" BEL "oportx2_ddrreg_14" BEL "oportx2_ddrreg_15" BEL 
+"oportx2_ddrreg_16" BEL "oportx2_ddrreg_17" BEL "oportx2_ddrreg_18" BEL 
+"oportx2_ddrreg_19" BEL "oportx2_ddrreg_20" BEL "oportx2_ddrreg_21" BEL 
+"oportx2_ddrreg_22" BEL "oportx2_outreg_0" BEL "oportx2_outreg_1" BEL 
+"oportx2_outreg_2" BEL "oportx2_outreg_3" BEL "oportx2_outreg_4" BEL 
+"oportx2_outreg_5" BEL "oportx2_outreg_6" BEL "oportx2_outreg_7" BEL 
+"oportx2_outreg_8" BEL "oportx2_outreg_9" BEL "oportx2_outreg_10" BEL 
+"oportx2_outreg_11" BEL "oportx2_outreg_12" BEL "oportx2_outreg_13" BEL 
+"oportx2_outreg_14" BEL "oportx2_outreg_15" BEL "oportx2_outreg_16" BEL 
+"oportx2_outreg_17" BEL "oportx2_outreg_18" BEL "oportx2_outreg_19" BEL 
+"oportx2_outreg_20" BEL "oportx2_outreg_21" BEL "oportx1_ddrreg_23" BEL 
+"oportx1_outreg_23" BEL "oportx1_ddrreg_0" BEL "oportx1_ddrreg_1" BEL 
+"oportx1_ddrreg_2" BEL "oportx1_ddrreg_3" BEL "oportx1_ddrreg_4" BEL 
+"oportx1_ddrreg_5" BEL "oportx1_ddrreg_6" BEL "oportx1_ddrreg_7" BEL 
+"oportx1_ddrreg_8" BEL "oportx1_ddrreg_9" BEL "oportx1_ddrreg_10" BEL 
+"oportx1_ddrreg_11" BEL "oportx1_ddrreg_12" BEL "oportx1_ddrreg_13" BEL 
+"oportx1_ddrreg_14" BEL "oportx1_ddrreg_15" BEL "oportx1_ddrreg_16" BEL 
+"oportx1_ddrreg_17" BEL "oportx1_ddrreg_18" BEL "oportx1_ddrreg_19" BEL 
+"oportx1_ddrreg_20" BEL "oportx1_ddrreg_21" BEL "oportx1_ddrreg_22" BEL 
+"oportx1_outreg_0" BEL "oportx1_outreg_1" BEL "oportx1_outreg_2" BEL 
+"oportx1_outreg_3" BEL "oportx1_outreg_4" BEL "oportx1_outreg_5" BEL 
+"oportx1_outreg_6" BEL "oportx1_outreg_7" BEL "oportx1_outreg_8" BEL 
+"oportx1_outreg_9" BEL "oportx1_outreg_10" BEL "oportx1_outreg_11" BEL 
+"oportx1_outreg_12" BEL "oportx1_outreg_13" BEL "oportx1_outreg_14" BEL 
+"oportx1_outreg_15" BEL "oportx1_outreg_16" BEL "oportx1_outreg_17" BEL 
+"oportx1_outreg_18" BEL "oportx1_outreg_19" BEL "oportx1_outreg_20" BEL 
+"oportx1_outreg_21" BEL "oportx0_ddrreg_23" BEL "oportx0_outreg_23" BEL 
+"oportx0_ddrreg_0" BEL "oportx0_ddrreg_1" BEL "oportx0_ddrreg_2" BEL 
+"oportx0_ddrreg_3" BEL "oportx0_ddrreg_4" BEL "oportx0_ddrreg_5" BEL 
+"oportx0_ddrreg_6" BEL "oportx0_ddrreg_7" BEL "oportx0_ddrreg_8" BEL 
+"oportx0_ddrreg_9" BEL "oportx0_ddrreg_10" BEL "oportx0_ddrreg_11" BEL 
+"oportx0_ddrreg_12" BEL "oportx0_ddrreg_13" BEL "oportx0_ddrreg_14" BEL 
+"oportx0_ddrreg_15" BEL "oportx0_ddrreg_16" BEL "oportx0_ddrreg_17" BEL 
+"oportx0_ddrreg_18" BEL "oportx0_ddrreg_19" BEL "oportx0_ddrreg_20" BEL 
+"oportx0_ddrreg_21" BEL "oportx0_ddrreg_22" BEL "oportx0_outreg_0" BEL 
+"oportx0_outreg_1" BEL "oportx0_outreg_2" BEL "oportx0_outreg_3" BEL 
+"oportx0_outreg_4" BEL "oportx0_outreg_5" BEL "oportx0_outreg_6" BEL 
+"oportx0_outreg_7" BEL "oportx0_outreg_8" BEL "oportx0_outreg_9" BEL 
+"oportx0_outreg_10" BEL "oportx0_outreg_11" BEL "oportx0_outreg_12" BEL 
+"oportx0_outreg_13" BEL "oportx0_outreg_14" BEL "oportx0_outreg_15" BEL 
+"oportx0_outreg_16" BEL "oportx0_outreg_17" BEL "oportx0_outreg_18" BEL 
+"oportx0_outreg_19" BEL "oportx0_outreg_20" BEL "oportx0_outreg_21" ;
+TIMEGRP "SYNCLK" = BEL "gledblink_count_0" BEL "gledblink_count_1" BEL 
+"gledblink_count_2" BEL "gledblink_count_3" BEL "gledblink_count_4" BEL 
+"gledblink_count_5" BEL "gledblink_count_6" BEL "gledblink_count_7" BEL 
+"gledblink_count_8" BEL "gledblink_count_9" BEL "gledblink_count_10" BEL 
+"gledblink_count_11" BEL "gledblink_count_12" BEL "gledblink_count_13" BEL 
+"gledblink_count_14" BEL "gledblink_count_15" BEL "gledblink_count_16" BEL 
+"gledblink_count_17" BEL "gledblink_count_18" BEL "gledblink_count_19" BEL 
+"gledblink_count_20" BEL "gledblink_count_21" BEL "gledblink_count_22" BEL 
+"gledblink_count_23" BEL "gledblink_count_24" ;
+TS_LClk = PERIOD TIMEGRP "LClk"  15 nS   HIGH 50.000000 % ;
+TS_SYNCLK = PERIOD TIMEGRP "SYNCLK"  20 nS   HIGH 50.000000 % ;
+TIMEGRP "PADS" = PADS ("*") ; 
+TS_P2P = MAXDELAY FROM TIMEGRP "PADS" TO TIMEGRP "PADS" 25 nS  ; 
+OFFSET = OUT 20 nS  AFTER COMP "LClk" ;
+SCHEMATIC END ;

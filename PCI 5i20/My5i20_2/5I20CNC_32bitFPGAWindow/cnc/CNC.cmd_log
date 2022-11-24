@@ -1,0 +1,130 @@
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd
+xst -intstyle ise -ifn __projnav/CNC.xst -ofn CNC.syr
+ngdbuild -intstyle ise -dd f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 CNC.ngc CNC.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o CNC_map.ncd CNC.ngd CNC.pcf
+par -w -intstyle ise -ol std -t 1 CNC_map.ncd CNC.ncd CNC.pcf
+trce -intstyle ise -e 3 -l 3 -xml CNC CNC.ncd -o CNC.twr CNC.pcf
+bitgen -intstyle ise -f CNC.ut CNC.ncd

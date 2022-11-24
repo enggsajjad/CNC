@@ -1,0 +1,3 @@
+set ADucfFile {pinout.ucf}
+set AD {}
+set ADcdcFile {}

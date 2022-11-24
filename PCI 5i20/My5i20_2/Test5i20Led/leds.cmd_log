@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn __projnav/leds.xst -ofn leds.syr
+xst -intstyle ise -ifn __projnav/leds.xst -ofn leds.syr
+xst -intstyle ise -ifn __projnav/leds.xst -ofn leds.syr
+xst -intstyle ise -ifn __projnav/leds.xst -ofn leds.syr
+xst -intstyle ise -ifn __projnav/leds.xst -ofn leds.syr
+ngdbuild -intstyle ise -dd f:\test5i20led/_ngo -uc pinout.ucf  -p xc2s200-pq208-6 leds.ngc leds.ngd
+ngdbuild -intstyle ise -dd f:\test5i20led/_ngo -uc pinout.ucf  -p xc2s200-pq208-6 leds.ngc leds.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o leds_map.ncd leds.ngd leds.pcf
+par -w -intstyle ise -ol std -t 1 leds_map.ncd leds.ncd leds.pcf
+trce -intstyle ise -e 3 -l 3 -xml leds leds.ncd -o leds.twr leds.pcf
+bitgen -intstyle ise -f leds.ut leds.ncd
+xst -intstyle ise -ifn __projnav/leds.xst -ofn leds.syr
+ngdbuild -intstyle ise -dd f:\test5i20led/_ngo -uc pinout.ucf  -p xc2s200-pq208-6 leds.ngc leds.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o leds_map.ncd leds.ngd leds.pcf
+par -w -intstyle ise -ol std -t 1 leds_map.ncd leds.ncd leds.pcf
+trce -intstyle ise -e 3 -l 3 -xml leds leds.ncd -o leds.twr leds.pcf
+bitgen -intstyle ise -f leds.ut leds.ncd

@@ -1,0 +1,28 @@
+Release 6.1i - ngdbuild G.23
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -intstyle ise -dd
+f:\my5i20\5i20cnc_32bitfpgawindow\cnc/_ngo -uc CNCpins.ucf -p xc2s200-pq208-6
+CNC.ngc CNC.ngd 
+
+Reading NGO file "F:/My5i20/5I20CNC_32bitFPGAWindow/cnc/CNC.ngc" ...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "CNCpins.ucf" ...
+
+Checking timing specifications ...
+Checking expanded design ...
+WARNING:NgdBuild:479 - The input pad net 'LWR' is driving one or more clock
+   loads that should only use a dedicated clock buffer. This could result in
+   large clock skews on this net. Check whether the correct type of BUF is being
+   used to drive the clock buffer.
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 40552 kilobytes
+
+Writing NGD file "CNC.ngd" ...
+
+Writing NGDBUILD log file "CNC.bld"...

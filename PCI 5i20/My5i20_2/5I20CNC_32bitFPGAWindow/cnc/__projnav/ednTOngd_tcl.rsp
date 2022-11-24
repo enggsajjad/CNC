@@ -1,0 +1,3 @@
+set ADucfFile {CNCpins.ucf}
+set AD {}
+set ADcdcFile {}

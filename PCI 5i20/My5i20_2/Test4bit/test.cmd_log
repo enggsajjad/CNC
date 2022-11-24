@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn __projnav/test.xst -ofn test.syr
+ngdbuild -intstyle ise -dd f:\my5i20\test4bit/_ngo -uc CNCpins.ucf  -p xc2s200-pq208-6 test.ngc test.ngd
+map -intstyle ise -p xc2s200-pq208-6 -cm area -pr b -k 4 -c 100 -tx off -o test_map.ncd test.ngd test.pcf
+par -w -intstyle ise -ol std -t 1 test_map.ncd test.ncd test.pcf
+trce -intstyle ise -e 3 -l 3 -xml test test.ncd -o test.twr test.pcf
+bitgen -intstyle ise -f test.ut test.ncd

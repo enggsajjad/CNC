@@ -1,0 +1,3 @@
+set ADucfFile {IOPR24_ORG.ucf}
+set AD {}
+set ADcdcFile {}

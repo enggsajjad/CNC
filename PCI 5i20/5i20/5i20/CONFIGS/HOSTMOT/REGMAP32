@@ -1,0 +1,151 @@
+12 channel HOSTMOT With index register and 3 phase PWM option
+
+config register map:
+
+Index Register	0x00
+
+Selects channel (axis) for indexed I/O
+
+Counter		0x04	Indexed
+
+CCR		0x08	Indexed
+
+CCR (Counter Control Register) Bit definitions:
+
+BIT9	CounterMode	0 = quadrature		1 = up/down
+BIT8	InputFilter	0 = No filter		1 = ~2 MHz input filter
+BIT7	Inbit
+BIT6	LCountenable	0 = count disabled	1 = counting enabled
+BIT5	ClearOnIndex	0 = no COI		1 = clear counter on index
+BIT4	Latchedindex	0 = no index		1 = index detected
+BIT3	IndexPolarity	0 = index active low	1 = index active high
+BIT2	Index		Real time index status (reads) counter clear (writes)
+BIT1	B		Real time input A status (read only)	
+BIT0	A		Read time input B status (read only)
+
+PWMVAL		0x0C	Indexed
+
+PWMVAL is an unsigned 16 bit number which is output as 10 bit PWM 
+
+PCR		0x10	Indexed
+ 					
+PCR bit Definitions:
+
+BIT2		Realtime PWM output bit status (read only)	
+BIT1		Interlace enable (interlaces PWM output for use as analog out)
+BIT0 		Enable -- enables PWM and ENA bit if set
+
+
+TPFIFO		0x20	Indexed
+
+TPFIFO is the port for writing the three phase PWM generators values
+
+TPFIFO bit definitions:
+
+BIT 31		PWM invert bit
+BITS 30..21     10 bit PWM end count
+BITS 14..5	10 bit PWM start count
+PWM is true when (Refcount >= start count) and (Refcount <= end count)
+BIT 4		WAIT bit - causes output state machine to wait for next PWM
+		Period before fetching more data from output of FIFO
+BIT 1..0	PWM output channel specifier (0,1,2 for A,B,C)
+
+Normal FIFO data would be in this sequence:
+PWMA or Wait Or 00
+PWMB or 01
+PWMC or 02
+PWMA or Wait or 00
+
+ThreePhaseCRs:
+
+TPCR		0x24	Indexed
+
+TPCR bit definitions:
+BIT2		ThreePhase reverse - connects ABC as BAC
+
+BIT1		Three phase output drive enable: 
+		(A,B,IDX are counter inputs if '0', 
+		A,B,C outputs if '1')		
+
+BIT0		Threephase FIFO output state machine enable
+		prevents automatic unloading of FIFO if zero
+
+FIFOCOUNT	0x28	Indexed	
+
+Show count of PWM values queued in FIFO
+Writes to FIFOCOUNT clear the FIFO
+
+HOSTSTART	0x2C	Indexed
+Writing to the HOSTSTART register allows program controlled transfer of FIFO
+data to the PWM generators. When bit 0 of the TPCR is 0, the FIFO will stall
+on data with the WAIT bit set until HOSTSTART is written, then the data will 
+be read out of the FIFO, and stored into the selected PWM output registers 
+until the next wait bit in the FIFO data stream.	
+
+
+
+I/O port:
+
+PORTA		0x30	24 bit I/O port (Direct)
+PORTADDR	0x34	24 I/O port Data direction register - 1 = out  (Direct)
+
+
+GContReg	0x40	Direct
+
+GContReg bit definitions:
+
+BIT3		0 = NOP		1 = Clear IRQ
+BIT2		0 = NOP		1 = Clear all PWMs
+BIT1		0 = NOP		1 = Latch all counters
+BIT0		0 = NOP		1 = Clear all counters
+ 
+Note GContReg is write only and "transient" you only need to write once to
+accomplish the desired action, no need to clear the bit later...
+
+GModeReg	0x44
+
+GMode register bit definitions:
+
+BIT6	IRQstatus	Real time IRQ status
+BIT5	IRQMask		IRQ mask bit
+BIT4	MissedIRQ	Missed interrupt status
+BIT3	SOM		Stop on Missed interrupt control bit
+BIT2	LOI		Latch on interrupt control bit
+BIT1	PWMEN		Global PWM enable
+BIT0	CTREN		Global counter enable
+
+IRQDivSel	0x48
+
+8 bit programmable divider for IRQ rate = PWM rate/(IRQDivSel+1)
+
+RATE register	0x4C
+16 bit rate register: multiplies PWM reference counter input rate by
+RATE/65536 so final PWM rate = 33MHz/1024 * RATE/65536 
+
+TPRATE register	0x4C
+16 bit rate register for Three phase PWMs: multiplies PWM reference counter 
+input rate by RATE/65536 so final PWM rate = 33MHz/1024 * RATE/65536 
+
+LEDView		0x54
+
+LED view register determines what channel the on card LEDS monitor.
+LEDs monitor the following signals of the selected channel:
+
+CR1	IRQLatch
+CR2	QuadA
+CR3	QuadB
+CR4	IDX
+CR5	DIR
+CR6	PWM
+CR7	ENA
+CR8	OUTBIT
+
+REFREQ counter	0x58 -- 32 bit
+
+Reads Local bus clock for timing calibration.
+Writes start a 100 mS gated frequency counter of the 33 MHz LCLK
+Gate status is MSB (bit 31) of REFREQ register.
+When gate becomes 0 after writing to REFREQ, frequency can be 
+read from REFFREQ = LCLK/10 Hz.
+ 
+

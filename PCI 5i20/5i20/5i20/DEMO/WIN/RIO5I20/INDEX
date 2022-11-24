@@ -1,0 +1,8 @@
+
+Directory contents:
+
+rio5i20w.c        5I20 general-purpose I/O demo. program source.
+Other rio5i20w.*  Visual C++ 6.0 droppings.
+Debug/*           Visual C++ 6.0 debug droppings.
+Release/*         Visual C++ 6.0 non-debug droppings.
+
